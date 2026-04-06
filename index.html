@@ -160,6 +160,11 @@
   /* Key author highlight */
   /* key-author styles removed */
 
+  /* Hide feedback on public version */
+  body.public-mode .feedback,
+  body.public-mode .fb-filter-group,
+  body.public-mode .btn-export-fb { display: none !important; }
+
   /* Feedback buttons */
   .feedback { display: flex; gap: 6px; margin-top: 10px; }
   .fb-btn {
@@ -337,7 +342,7 @@
 
 <div class="header">
   <h1>Veille Hémato-Immuno-Oncologie</h1>
-  <div class="sub">2026-S13 — Alexis Claudel, Henri Mondor — Généré le 02/04/2026</div>
+  <div class="sub">2026-S13 — Alexis Claudel, Henri Mondor — Généré le 06/04/2026</div>
 </div>
 
 <div id="deadlineBanner" style="display:none;background:#92400e;border:1px solid #f59e0b;border-radius:8px;padding:10px 16px;margin-bottom:12px;color:#fde68a;font-size:0.85rem;"></div>
@@ -454,7 +459,7 @@
     <label>Recherche</label><br>
     <input type="text" id="searchBox" placeholder="titre, auteur, tag...">
   </div>
-  <div>
+  <div class="fb-filter-group">
     <label>Feedback</label><br>
     <select id="filterFb">
       <option value="">Tous</option>
@@ -466,7 +471,7 @@
   </div>
   <div style="align-self: flex-end; display: flex; gap: 6px; flex-wrap: wrap;">
     <button class="btn-export" onclick="resetAllFilters()" title="Réinitialiser tous les filtres" style="background:#64748b;">✕ Reset</button>
-    <button class="btn-export" onclick="exportFeedback()">Exporter feedback</button>
+    <button class="btn-export btn-export-fb" onclick="exportFeedback()">Exporter feedback</button>
   </div>
 </div>
 
@@ -549,7 +554,7 @@ const DATA = [
     "if_val": 11.9,
     "score": 6,
     "date_pub": "2026-03-01",
-    "pmid": "N/A",
+    "pmid": "",
     "critique": "Approche méthodologique innovante résolvant la limite clé des méthodes tumor-naïves en combinant les informations CNA tumor-informed avec le sWGS à bas coût. La sensibilité à 0,2% et l'avance de 3,7 mois sur CA-125 sont cliniquement pertinentes. Limites majeures : validée uniquement dans l'ovaire (cohorte modeste n=18) et dans un cancer à forte instabilité chromosomique — l'applicabilité aux lymphomes (CNA moins fréquentes qu'en carcinomes solides) reste à évaluer. L'absence de comparaison à des méthodes mutation-based limite l'estimation de la valeur ajoutée pour des cancers à mutation drivante connue. Très prometteuse pour le monitoring post-CAR-T en LBCL.",
     "pays": "GB",
     "citations": 0
@@ -593,7 +598,7 @@ const DATA = [
     "if_val": 13.0,
     "score": 5,
     "date_pub": "2026-03-15",
-    "pmid": "N/A",
+    "pmid": "",
     "critique": "Revue de référence pratique synthétisant l'état de l'art 2026 pour la gestion du DLBCL, avec accès rapide aux algorithmes décisionnels. Limites inhérentes au format review/guidelines : absence de données originales, délai entre soumission et publication. Le positionnement du ctDNA-MRD reste prudent (non encore intégré comme critère décisionnel standard), ce qui reflète fidèlement la réalité réglementaire actuelle en attente d'essais interventionnels. Outil utile en pratique clinique quotidienne.",
     "pays": "US",
     "citations": 0
@@ -637,7 +642,7 @@ const DATA = [
     "if_val": 0,
     "score": 5,
     "date_pub": "2026-03-21",
-    "pmid": "N/A",
+    "pmid": "",
     "critique": "Étude mécanistique élégante apportant un modèle conceptuel pour l'initiation du lymphome B par coopération TET2-MYC. La démonstration d'un effet prémalin (avant l'établissement du lymphome) est un angle original. Limites : modèle murin dont la transposabilité au DLBCL humain n'est pas démontrée, absence de données cliniques humaines corrélatives, et la question de la détection de cellules IgM prémalignes TET2-déficientes par ctDNA reste ouverte.",
     "pays": "AT",
     "citations": 0
@@ -1783,28 +1788,6 @@ const DATA = [
     "date_pub": "2019-10-21",
     "pmid": "30897038",
     "critique": "Option thérapeutique importante sans chimiothérapie en LF R/R ; le profil de toxicité hématologique du lénalidomide et la durée indéfinie du traitement méritent attention.",
-    "pays": "CA",
-    "citations": 0
-  },
-  {
-    "semaine": "retro",
-    "titre": "Outcomes in Refractory Diffuse Large B-Cell Lymphoma: Results From the International SCHOLAR-1 Study",
-    "auteur": "Crump M",
-    "senior": "Kuruvilla J",
-    "journal": "Blood",
-    "doi": "10.1182/blood-2017-03-769620",
-    "doi_url": "https://doi.org/10.1182/blood-2017-03-769620",
-    "categorie": "Lymphomes",
-    "tags": "DLBCL réfractaire, SCHOLAR-1, pronostic sombre, chimio-réfractaire, Survie",
-    "resume": "SCHOLAR-1 documente les pronostics désastreux des DLBCL réfractaires à la chimiothérapie (survie médiane 6,3 mois, taux de rémission complète <8%) dans une étude internationale poolée. Justifie le besoin urgent de nouvelles thérapies et fournit le contexte pour les essais CAR-T.",
-    "metadata": "OK",
-    "preprint": "Publié",
-    "affFR": "Non",
-    "if_val": 23.0,
-    "score": 8,
-    "date_pub": "2017-10-19",
-    "pmid": "28774879",
-    "critique": "Données historiques essentielles définissant l'unmet need du DLBCL chimio-réfractaire ; constitue la référence pour comparer les nouvelles thérapies cellulaires et immunothérapies.",
     "pays": "CA",
     "citations": 0
   },
@@ -10610,28 +10593,6 @@ const DATA = [
   },
   {
     "semaine": "retro",
-    "titre": "Glofitamab, a Novel, Bivalent CD20-Targeting T-Cell-Engaging Bispecific Antibody, Induces Durable Complete Remissions in Relapsed or Refractory B-Cell Lymphoma: A Phase I Trial",
-    "auteur": "Hutchings M",
-    "senior": "Dickinson MJ",
-    "journal": "Journal of Clinical Oncology",
-    "doi": "10.1200/JCO.20.03175",
-    "doi_url": "https://doi.org/10.1200/JCO.20.03175",
-    "categorie": "Lymphomes",
-    "tags": "Glofitamab, bispécifique, CD20, CD3, DLBCL, LNH-B, phase 1, obinutuzumab, RC durable, sans entretien",
-    "resume": "Essai de phase I du glofitamab (anticorps bispécifique 2:1 CD20xCD3) avec prétraitement obinutuzumab chez 171 patients avec LNH-B réfractaires (127 DLBCL/FL transformé, 44 indolents). SRC chez 50,3% (grade ≥3 : 3,5%). ORR 53,8% (RC 36,8%) sur toutes les doses ; à la dose phase II recommandée : ORR 65,7% et RC 57,1%. Parmi les 63 patients en RC, 84,1% maintiennent leur RC à un maximum de 27,4 mois de suivi, sans traitement d'entretien. Preuve de concept de RC durables par un traitement en cours-limité.",
-    "metadata": "OK",
-    "preprint": "Publié",
-    "affFR": "Non",
-    "if_val": 45.3,
-    "score": 8,
-    "date_pub": "2021-03-19",
-    "pmid": "33739857",
-    "critique": "Efficacité remarquable dans une population très prétraitée (90% réfractaires) avec des RC potentiellement durables sans entretien, se démarquant des autres bispécifiques par ce concept thérapeutique. En tant qu'essai de phase I, l'absence de comparateur et l'effectif limité sont attendus. La gestion du SRC et la validation de la dose recommandée sont en cours dans des essais de phase II/III.",
-    "pays": "DK",
-    "citations": 0
-  },
-  {
-    "semaine": "retro",
     "titre": "Epigenetics, fragmentomics, and topology of cell-free DNA in liquid biopsies",
     "auteur": "Lo YMD",
     "senior": "Chiu RWK",
@@ -11402,28 +11363,6 @@ const DATA = [
   },
   {
     "semaine": "retro",
-    "titre": "Circulating Tumor DNA Measurements As Early Outcome Predictors in DLBCL",
-    "auteur": "Kurtz DM",
-    "senior": "Alizadeh AA",
-    "journal": "Journal of Clinical Oncology",
-    "doi": "10.1200/JCO.2018.78.5246",
-    "doi_url": "https://doi.org/10.1200/JCO.2018.78.5246",
-    "categorie": "ctDNA — Lymphomes",
-    "tags": "ctDNA, DLBCL, prédiction précoce, EMR",
-    "resume": "Score intégrant ctDNA pré-traitement et cinétique après 1 cycle pour prédire les résultats dans le DLBCL. ctDNA pré-traitement >2.5 log est le facteur pronostique le plus puissant, indépendant de l'IPI.",
-    "metadata": "OK",
-    "preprint": "Publié",
-    "affFR": "Non",
-    "if_val": 45.3,
-    "score": 9,
-    "date_pub": "2019-03-04",
-    "pmid": "30125215",
-    "critique": "Modèle de prédiction précoce intégrant le ctDNA. Validation multi-cohorte. Suite logique des travaux Stanford.",
-    "pays": "US",
-    "citations": 0
-  },
-  {
-    "semaine": "retro",
     "titre": "Phased Variant Enrichment for Ultra-Sensitive Detection of ctDNA (PhasED-Seq)",
     "auteur": "Kurtz DM",
     "senior": "Alizadeh AA",
@@ -11908,28 +11847,6 @@ const DATA = [
   },
   {
     "semaine": "retro",
-    "titre": "Cell-free DNA Comprises an In Vivo Nucleosome Footprint that Informs Its Tissues-Of-Origin",
-    "auteur": "Ulz P",
-    "senior": "Speicher MR",
-    "journal": "Cell",
-    "doi": "10.1016/j.cell.2015.11.050",
-    "doi_url": "https://doi.org/10.1016/j.cell.2015.11.050",
-    "categorie": "ctDNA — Méthodo",
-    "tags": "Fragmentomique, nucléosomes, expression génique, cfDNA",
-    "resume": "Utilisation des profils de couverture nucléosomique du cfDNA pour inférer l'expression génique des tissus d'origine. Les promoteurs actifs montrent des patterns de nucléosomes distincts dans le cfDNA.",
-    "metadata": "OK",
-    "preprint": "Publié",
-    "affFR": "Non",
-    "if_val": 16.6,
-    "score": 8,
-    "date_pub": "2019-05-01",
-    "pmid": "26771485",
-    "critique": "Extension de la fragmentomique vers l'inférence de l'expression génique à partir du cfDNA. Concept innovant reliant structure chromatinienne et biopsie liquide.",
-    "pays": "AT",
-    "citations": 0
-  },
-  {
-    "semaine": "retro",
     "titre": "Assessment of Tumor Mutational Burden from >100,000 patients with cfDNA",
     "auteur": "Gandara DR",
     "senior": "Herbst RS",
@@ -12392,28 +12309,6 @@ const DATA = [
   },
   {
     "semaine": "retro",
-    "titre": "Lisocabtagene maraleucel versus standard of care with salvage chemotherapy followed by autologous SCT (TRANSFORM)",
-    "auteur": "Jacobson CA",
-    "senior": "Chavez JC",
-    "journal": "The Lancet",
-    "doi": "10.1016/S0140-6736(22)00662-6",
-    "doi_url": "https://doi.org/10.1016/S0140-6736(22)00662-6",
-    "categorie": "Lymphomes",
-    "tags": "liso-cel, CAR-T, TRANSFORM, 2ème ligne, autogreffe",
-    "resume": "TRANSFORM (n=184) : liso-cel vs salvage + autogreffe en 2ème ligne DLBCL. EFS supérieur avec liso-cel (HR 0.35). Premier essai randomisé montrant la supériorité du CAR-T sur l'autogreffe en 2ème ligne.",
-    "metadata": "OK",
-    "preprint": "Publié",
-    "affFR": "Non",
-    "if_val": 168.9,
-    "score": 9,
-    "date_pub": "2022-06-05",
-    "pmid": "35717989",
-    "critique": "Essai pivot déplaçant le CAR-T en 2ème ligne (avec ZUMA-7 et BELINDA). Changement majeur de paradigme thérapeutique.",
-    "pays": "US",
-    "citations": 0
-  },
-  {
-    "semaine": "retro",
     "titre": "Bendamustine plus rituximab for previously untreated mantle-cell lymphoma (BRIGHT)",
     "auteur": "Flinn IW",
     "senior": "van der Jagt R",
@@ -12476,28 +12371,6 @@ const DATA = [
     "pmid": "24052547",
     "critique": "Mutation EZH2 est un biomarqueur clé en FL, ciblé par tazemetostat (approuvé FDA 2020). Détectable par ctDNA.",
     "pays": "GB",
-    "citations": 0
-  },
-  {
-    "semaine": "retro",
-    "titre": "Molecular subtypes of diffuse large B-cell lymphoma are associated with distinct pathogenic mechanisms",
-    "auteur": "Morin RD",
-    "senior": "Gascoyne RD",
-    "journal": "Nature Medicine",
-    "doi": "10.1038/s41591-018-0016-8",
-    "doi_url": "https://doi.org/10.1038/s41591-018-0016-8",
-    "categorie": "Lymphomes",
-    "tags": "DLBCL, sous-types moléculaires, voies de signalisation, mutations",
-    "resume": "Intégration multi-omique de 347 DLBCL montrant que les sous-types ABC/GCB ont des mécanismes pathogènes distincts avec des vulnérabilités thérapeutiques spécifiques.",
-    "metadata": "OK",
-    "preprint": "Publié",
-    "affFR": "Non",
-    "if_val": 20.3,
-    "score": 8,
-    "date_pub": "2016-01-21",
-    "pmid": "29713087",
-    "critique": "Pont conceptuel entre classification moléculaire et cibles thérapeutiques en DLBCL. Important pour le rationnel des essais de thérapie ciblée.",
-    "pays": "CA",
     "citations": 0
   },
   {
@@ -12910,14 +12783,18 @@ function isKeyAuthor(a) {
 }
 const FB_KEY = 'veille_feedback_2026-S13';
 const SAVED_FEEDBACK = {"10.1200/JCO-25-01587": "utile"};
+const IS_PUBLIC = window.location.hostname.includes('github.io');
+if (IS_PUBLIC) document.body.classList.add('public-mode');
 let feedback = {};
 // Charger : d'abord les fichiers feedback exportés, puis localStorage par-dessus
-try {
-  Object.assign(feedback, SAVED_FEEDBACK);
-  const stored = JSON.parse(localStorage.getItem(FB_KEY) || '{}');
-  Object.assign(feedback, stored);
-} catch(e) {}
-function saveFb() { try { localStorage.setItem(FB_KEY, JSON.stringify(feedback)); } catch(e) {} }
+if (!IS_PUBLIC) {
+  try {
+    Object.assign(feedback, SAVED_FEEDBACK);
+    const stored = JSON.parse(localStorage.getItem(FB_KEY) || '{}');
+    Object.assign(feedback, stored);
+  } catch(e) {}
+}
+function saveFb() { if (!IS_PUBLIC) { try { localStorage.setItem(FB_KEY, JSON.stringify(feedback)); } catch(e) {} } }
 
 const CAT_COLORS = {
   'ctDNA — Lymphomes': '#3b82f6',
@@ -14105,5 +13982,12 @@ if (document.fonts) document.fonts.ready.then(alignDirCards);
 
 window.addEventListener('resize', () => { renderGeoMap(); });
 </script>
+
+<div style="text-align:center; padding: 32px 0 24px; border-top: 1px solid #334155; margin-top: 40px;">
+  <a href="mailto:alexis.claudel@aphp.fr?subject=Veille%20Hémato%20-%20Feedback" style="display:inline-block; padding: 10px 24px; background:#3b82f6; color:#fff; border-radius:8px; text-decoration:none; font-size:0.85rem; font-weight:600; transition: background 0.2s;">
+    Contact — questions, suggestions, bugs
+  </a>
+</div>
+
 </body>
 </html>
