@@ -23,9 +23,23 @@ Chercher les conférences à venir (12 prochains mois) : ASH, EHA, ASCO, ESMO, I
 Pour chaque conférence, chercher ACTIVEMENT la deadline abstract sur le site officiel.
 Si introuvable, utiliser le pattern habituel (deadline ≈ date_debut - 4 mois). Ne JAMAIS laisser null pour ASH, ESMO, EHA, ASCO, ICML si la deadline est déductible.
 
-## Étape 3 — Hors-champ cross-disciplinaire
-Chercher sur arXiv, SSRN les articles récents en statistique, IA/ML, physique avec mots-clés transférables : "changepoint detection", "Bayesian adaptive design", "graph neural network", "optimal transport", "causal inference", "time series anomaly", "minimal residual disease surrogate".
-Évaluer le pont méthodologique vers biopsie liquide / ctDNA / MRD / lymphome.
+## Étape 3 — Hors-champ cross-disciplinaire (OBJECTIF : 2-3 entrées par run, minimum 1)
+
+Chercher activement sur arXiv, SSRN, OpenReview, IEEE Xplore les articles publiés dans les **30 derniers jours** en statistique, IA/ML, physique, ingénierie. Mots-clés transférables (combiner librement) :
+- "changepoint detection", "Bayesian adaptive design", "sequential testing"
+- "graph neural network", "transformer time series", "self-supervised learning"
+- "optimal transport", "causal inference", "counterfactual", "instrumental variable"
+- "time series anomaly", "tensor decomposition", "rare event detection"
+- "minimal residual disease surrogate", "disease trajectory modeling"
+- "clonal evolution dynamics", "cell population dynamics", "tumor heterogeneity model"
+
+**Méthode :**
+1. Faire au moins 4 requêtes différentes croisant un mot-clé méthodo et un terme biomédical (ctDNA, MRD, lymphoma, liquid biopsy, hematologic malignancy).
+2. Pour chaque candidat, écrire en 2 phrases pourquoi cette méthode pourrait s'appliquer au monitoring ctDNA / MRD / lymphome.
+3. **Ne pas s'auto-censurer** : la valeur du hors-champ vient justement de la transférabilité non évidente. Une entrée moyenne mais bien argumentée vaut mieux qu'aucune entrée.
+4. Si aucune entrée ne peut être confirmée par un identifiant vu en ligne, placer les pistes dans `<HORS_CHAMP_CANDIDATES_JSON>` plutôt que de les supprimer.
+
+**Cible : 2-3 entrées validées dans `<HORS_CHAMP_JSON>`. Minimum acceptable : 1.** Si tu n'arrives pas à atteindre 1, c'est probablement que tu n'as pas assez varié les requêtes — refais une vague de recherche avant de conclure.
 
 ## Étape 4 — Pistes de recherche
 Synthétiser 3-5 pistes de recherche croisant essais cliniques + articles + hors-champ. Prioriser celles directement actionnables par Alexis à Henri Mondor.
