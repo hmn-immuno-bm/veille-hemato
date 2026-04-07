@@ -254,13 +254,35 @@ def articles_to_js(articles):
 
 
 def load_dashboard_template():
-    """Charge le template HTML du dashboard."""
-    template_path = os.path.join(os.path.dirname(__file__), 'dashboard_template.html')
+    """Charge le template HTML du dashboard et inline le CSS + JS depuis
+    leurs fichiers séparés (dashboard.css et dashboard.js).
+
+    Cette séparation permet d'éditer le CSS et le JS sans toucher au HTML
+    et bénéficie de la coloration syntaxique de l'éditeur. Les placeholders
+    %%DATA%%, %%CONFERENCES%%, etc. restent dans le JS et sont remplacés
+    par generate() comme avant.
+    """
+    here = os.path.dirname(__file__)
+    template_path = os.path.join(here, 'dashboard_template.html')
+    css_path = os.path.join(here, 'dashboard.css')
+    js_path = os.path.join(here, 'dashboard.js')
+
     if not os.path.exists(template_path):
         print(f"Erreur: fichier template non trouvé à {template_path}", file=sys.stderr)
         sys.exit(1)
     with open(template_path, 'r', encoding='utf-8') as f:
-        return f.read()
+        html = f.read()
+
+    # Inline CSS si le placeholder est présent
+    if '%%CSS%%' in html and os.path.exists(css_path):
+        with open(css_path, 'r', encoding='utf-8') as f:
+            html = html.replace('%%CSS%%', f.read())
+    # Inline JS si le placeholder est présent
+    if '%%JS%%' in html and os.path.exists(js_path):
+        with open(js_path, 'r', encoding='utf-8') as f:
+            html = html.replace('%%JS%%', f.read())
+
+    return html
 
 
 
@@ -295,11 +317,19 @@ def generate(veille_dir, semaine_filter=None):
 
     date_gen = date.today().strftime("%d/%m/%Y")
 
-    # Load key authors
+    # Load key authors — JSON en priorité (riche), TXT en fallback (legacy)
     key_authors = []
-    ka_path = os.path.join(veille_dir, 'outils', 'auteurs_cles.txt')
-    if os.path.exists(ka_path):
-        with open(ka_path, 'r', encoding='utf-8') as f:
+    ka_json = os.path.join(veille_dir, 'outils', 'auteurs_cles.json')
+    ka_txt = os.path.join(veille_dir, 'outils', 'auteurs_cles.txt')
+    if os.path.exists(ka_json):
+        try:
+            with open(ka_json, 'r', encoding='utf-8') as f:
+                ka_data = json.load(f)
+            key_authors = [a['nom'] for a in ka_data.get('auteurs', []) if a.get('nom')]
+        except Exception:
+            pass
+    if not key_authors and os.path.exists(ka_txt):
+        with open(ka_txt, 'r', encoding='utf-8') as f:
             for line in f:
                 line = line.strip()
                 if line and not line.startswith('#'):

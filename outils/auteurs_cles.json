@@ -1,0 +1,27 @@
+{
+  "_comment": "Auteurs clés à surveiller. Le champ 'nom' est utilisé pour le matching dans les premier_auteur/senior_auteur des articles (ex: 'Kurtz' matche 'David M Kurtz'). Les autres champs sont informatifs et destinés au dashboard / à l'enrichissement futur.",
+  "version": "1.0",
+  "updated": "2026-04-07",
+  "auteurs": [
+    {"nom": "Kurtz",     "prenom": "David M",   "equipe": "Stanford",            "role": "senior",  "raison": "ctDNA lymphome — pionnier CAPP-Seq / phased variants"},
+    {"nom": "Roschewski","prenom": "Mark",      "equipe": "NCI Bethesda",        "role": "senior",  "raison": "ctDNA DLBCL — Wilson group"},
+    {"nom": "Borchmann", "prenom": "Sven",      "equipe": "Cologne",             "role": "senior",  "raison": "ctDNA Hodgkin / DLBCL"},
+    {"nom": "Westin",    "prenom": "Jason",     "equipe": "MD Anderson",         "role": "senior",  "raison": "CAR-T DLBCL / lymphome agressif"},
+    {"nom": "Neelapu",   "prenom": "Sattva",    "equipe": "MD Anderson",         "role": "senior",  "raison": "CAR-T (ZUMA studies)"},
+    {"nom": "Scherer",   "prenom": "Florian",   "equipe": "Freiburg",            "role": "senior",  "raison": "ctDNA lymphome / phased variants"},
+    {"nom": "Schmitz",   "prenom": "Roland",    "equipe": "NCI / Giessen",       "role": "senior",  "raison": "Classification moléculaire DLBCL (LymphGen)"},
+    {"nom": "Staudt",    "prenom": "Louis M",   "equipe": "NCI Bethesda",        "role": "senior",  "raison": "ABC/GCB DLBCL — auteur historique"},
+    {"nom": "Chapuy",    "prenom": "Bjoern",    "equipe": "Göttingen / Berlin",  "role": "senior",  "raison": "Génomique DLBCL — clusters Chapuy"},
+    {"nom": "Rossi",     "prenom": "Davide",    "equipe": "Bellinzona",          "role": "senior",  "raison": "ctDNA CLL/lymphome"},
+    {"nom": "Camus",     "prenom": "Vincent",   "equipe": "Rouen",               "role": "senior",  "raison": "Lymphome / GELA — collaborateur français"},
+    {"nom": "Jardin",    "prenom": "Fabrice",   "equipe": "Rouen",               "role": "senior",  "raison": "DLBCL — GELA / LYSA"},
+    {"nom": "Houot",     "prenom": "Roch",      "equipe": "Rennes",              "role": "senior",  "raison": "Immunothérapie lymphome / CAR-T"},
+    {"nom": "Tilly",     "prenom": "Hervé",    "equipe": "Rouen",               "role": "senior",  "raison": "Lymphome — pionnier R-CHOP / POLARIX"},
+    {"nom": "Hermine",   "prenom": "Olivier",   "equipe": "Necker (Paris)",      "role": "senior",  "raison": "Hématologie — leader français"},
+    {"nom": "Sujobert",  "prenom": "Pierre",    "equipe": "Lyon Sud",            "role": "senior",  "raison": "Lymphome / IA hémato"},
+    {"nom": "Heiblig",   "prenom": "Maël",     "equipe": "Lyon Sud",            "role": "premier", "raison": "LAM / hémato Lyon"},
+    {"nom": "Belhabri",  "prenom": "Anne",     "equipe": "Lyon",                "role": "senior",  "raison": "LAM / Lyon"},
+    {"nom": "Michallet", "prenom": "Mauricette","equipe": "Lyon",                "role": "senior",  "raison": "Allogreffe / Lyon"},
+    {"nom": "Salles",    "prenom": "Gilles",    "equipe": "MSKCC (NY)",          "role": "senior",  "raison": "Lymphome — référence internationale"}
+  ]
+}

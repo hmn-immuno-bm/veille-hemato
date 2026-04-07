@@ -4,13 +4,22 @@ Alexis est médecin chercheur AHU à Henri Mondor (Créteil), spécialisé en bi
 
 ## À FAIRE À CHAQUE OUVERTURE DE SESSION
 
-Dès que cette session démarre avec ce dossier, vérifier automatiquement s'il y a des articles à importer :
-1. Appeler `mcp__session_info__list_sessions` (limit 10)
-2. Chercher les sessions "Hemato weekly summary" ou "hemato-clinical-trials" plus récentes que le dernier import
-3. S'il y en a, proposer à Alexis : "J'ai trouvé N digest(s) non importé(s). Je les importe ?"
-4. Le dernier import est horodaté dans `outils/weekly_search_done.txt`
-5. Si un transcript de hemato-clinical-trials contient `<CONFERENCES_JSON>`, extraire et écrire dans `output/conferences.json`
-6. Si un transcript de hemato-clinical-trials contient `<CLINICAL_TRIALS_JSON>`, extraire et écrire dans `output/clinical_trials.json`
+Dès que cette session démarre avec ce dossier :
+
+**1. Vérifier la fraîcheur de la base.**
+   - Lire `outils/weekly_search_done.txt` pour récupérer la date du dernier import.
+   - Si > 10 jours sans import : alerter Alexis ("⚠️ Aucun import depuis N jours — la veille planifiée a peut-être échoué. Vérifier les tâches `hemato-weekly-search` et `hemato-weekly-summary`.").
+   - Si > 35 jours sans import hemato-clinical-trials : alerter aussi.
+
+**2. Vérifier s'il y a des digests à importer.**
+   - Appeler `mcp__session_info__list_sessions` (limit 10).
+   - Chercher les sessions "Hemato weekly summary" ou "hemato-clinical-trials" plus récentes que le dernier import.
+   - S'il y en a, proposer : "J'ai trouvé N digest(s) non importé(s). Je les importe ?"
+   - Si un transcript de hemato-clinical-trials contient `<CONFERENCES_JSON>` ou `<CLINICAL_TRIALS_JSON>`, extraire dans `output/conferences.json` / `output/clinical_trials.json`.
+
+**3. Tirage anti-drift hebdomadaire (optionnel).**
+   - Si la dernière entrée du journal `outils/veille_log.txt` mentionnant "sample_for_verification" date de plus de 7 jours, proposer à Alexis : "Je tire 5% des articles pour vérification PubMed ?"
+   - Lancer `python3 outils/sample_for_verification.py .` puis vérifier les PMID via PubMed MCP.
 
 ## Architecture
 
