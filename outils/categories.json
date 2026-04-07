@@ -1,0 +1,49 @@
+{
+  "_comment": "Source unique des catégories d'articles. Propagée par tous les scripts. Modifier UNIQUEMENT ici, puis lancer outils/sync_categories.py.",
+  "version": "1.0",
+  "updated": "2026-04-07",
+  "categories": [
+    {
+      "id": "hemato_generale",
+      "label": "Hémato générale",
+      "rang": "C5",
+      "description": "Hématologie générale (non lymphome, non ctDNA)"
+    },
+    {
+      "id": "lymphomes",
+      "label": "Lymphomes",
+      "rang": "C3",
+      "description": "Lymphomes B et T, sans composante ctDNA spécifique"
+    },
+    {
+      "id": "ctdna_lymphomes",
+      "label": "ctDNA — Lymphomes",
+      "rang": "C1",
+      "description": "Biopsie liquide / ctDNA appliqué aux lymphomes (priorité haute)"
+    },
+    {
+      "id": "ctdna_methodo",
+      "label": "ctDNA — Méthodo",
+      "rang": "C2",
+      "description": "Méthodologie ctDNA (autres tumeurs, technique pure)"
+    },
+    {
+      "id": "immuno_ctdna_lymphome",
+      "label": "Immuno + ctDNA/Lymphome",
+      "rang": "C2",
+      "description": "Immunothérapie (CAR-T, bispécifiques) couplée à monitoring ctDNA dans lymphomes"
+    },
+    {
+      "id": "ia_hemato",
+      "label": "IA + Hémato",
+      "rang": "C4",
+      "description": "IA / ML appliqué à l'hématologie"
+    },
+    {
+      "id": "preprint",
+      "label": "Preprint",
+      "rang": "C2",
+      "description": "Preprint bioRxiv / medRxiv pertinent"
+    }
+  ]
+}

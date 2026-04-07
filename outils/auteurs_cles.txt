@@ -1,0 +1,23 @@
+# Auteurs clés à suivre — un nom par ligne (premier ou senior auteur)
+# Les articles de ces auteurs seront mis en surbrillance dans le dashboard
+# Format : Nom (tel qu'il apparaît dans PubMed, ex: "Kurtz" matche "David M Kurtz")
+Kurtz
+Roschewski
+Borchmann
+Westin
+Neelapu
+Scherer
+Schmitz
+Staudt
+Chapuy
+Rossi
+Camus
+Jardin
+Houot
+Tilly
+Hermine
+Sujobert
+Heiblig
+Belhabri
+Michallet
+Salles

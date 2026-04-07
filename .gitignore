@@ -1,0 +1,18 @@
+# Le dossier output/ est un dépôt git séparé (publié sur GitHub Pages).
+# On ne le suit PAS depuis le repo parent pour éviter les submodules implicites.
+output/
+
+# Fichiers temporaires
+*.pyc
+__pycache__/
+.DS_Store
+*.swp
+*~
+
+# Sentinelle / logs (régénérés à chaque run)
+outils/weekly_search_done.txt
+outils/veille_log.txt
+
+# IDE
+.vscode/
+.idea/
