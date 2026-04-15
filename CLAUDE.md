@@ -93,13 +93,40 @@ python3 $VEILLE_DIR/outils/generate_dashboard.py $VEILLE_DIR
 # Uniquement à l'occasion d'un import hemato-clinical-trials
 python3 $VEILLE_DIR/outils/consolidate_feedback.py $VEILLE_DIR
 
-# === ÉTAPE 11 — Mettre à jour les citations (mensuel uniquement) ===
-# ⚠️ ACTUELLEMENT DEPRECATED : toutes les APIs de citations testées
-# (Semantic Scholar, iCite, OpenAlex, CrossRef, Europe PMC, eutils) sont
-# bloquées par le proxy réseau, depuis le sandbox ET depuis Cowork.
-# Le script existe mais retourne immédiatement avec un message d'erreur.
-# Si le blocage est levé un jour :
-#   python3 $VEILLE_DIR/outils/update_citations.py $VEILLE_DIR --batch-size 50 --delay 1.5
+# === ÉTAPE 11 — Mettre à jour les citations (mensuel, via Chrome MCP) ===
+# Le proxy sandbox bloque toutes les APIs de citations, MAIS Chrome MCP passe
+# par le navigateur d'Alexis (réseau maison) et atteint OpenAlex.
+# Prérequis : domaine api.openalex.org ajouté à l'allowlist de l'extension
+# Claude in Chrome.
+#
+# Workflow en 3 phases :
+#
+#   Phase 1 (Python) : préparer les batches + générer un snippet JS
+python3 $VEILLE_DIR/outils/prepare_citations_update.py $VEILLE_DIR
+#     → /tmp/citations_fetch.js + /tmp/citations_input.json
+#     → option : --max-age-days N (skip articles rafraîchis < N jours, défaut 30)
+#
+#   Phase 2 (Chrome MCP) : Cowork exécute le JS via javascript_tool
+#     1. Ouvrir un onglet api.openalex.org dans Chrome (ou tout onglet allowlisté)
+#     2. Lire /tmp/citations_fetch.js et l'exécuter :
+#          mcp__Claude_in_Chrome__javascript_tool(
+#              action='javascript_exec', tabId=<id>, code=<contenu du .js>)
+#     3. Le résultat ressort tronqué (>100 items ou >1KB). Stratégie :
+#          a. Stocker dans window.__citations_result
+#          b. Aplatir :
+#             window.__flat = Object.entries(window.__citations_result.citations)
+#                 .map(([d,v]) => ({d, c:v.cited_by_count,
+#                                    o:(v.openalex_id||'').replace(/^https:\/\/openalex\.org\//,'')}));
+#          c. Extraire par chunks de 90 :
+#             window.__flat.slice(N, N+90).map(e => [e.d, e.c, e.o])
+#     4. Réassembler côté Python en /tmp/citations_results.json au format :
+#          {"backend":"openalex","fetched_at":"YYYY-MM-DD",
+#           "citations":{doi:{cited_by_count,openalex_id,title}, ...}}
+#
+#   Phase 3 (Python) : merge dans articles_db.json
+python3 $VEILLE_DIR/outils/apply_citations_update.py $VEILLE_DIR
+#     → ajoute citation_count, citation_count_updated, citation_source, openalex_id
+#     → --dry-run pour voir le plan sans écrire
 ```
 
 ## Vérification en ligne via MCP Cowork (OBLIGATOIRE après import)
@@ -186,7 +213,8 @@ Le fichier `output/preferences.json` contient les préférences apprises.
 - `outils/dashboard_template.html` — Template HTML/CSS/JS du dashboard (placeholders %%DATA%% etc.)
 - `outils/analyze_feedback.py` — Feedback → Préférences → Calibration scoring par régression OLS
 - `outils/consolidate_feedback.py` — Consolidation mensuelle des feedback_*.json (garde n-1, supprime les fusionnés)
-- `outils/update_citations.py` — DEPRECATED — toutes les APIs de citations sont bloquées par le proxy réseau
+- `outils/prepare_citations_update.py` — Phase 1 : lit articles_db.json, génère `/tmp/citations_fetch.js` (batches OpenAlex de 50 DOIs) et `/tmp/citations_input.json`
+- `outils/apply_citations_update.py` — Phase 3 : lit `/tmp/citations_results.json` et merge `citation_count` + `citation_count_updated` + `citation_source` + `openalex_id` dans articles_db.json
 - `outils/verify_hors_champ.py` — Vérification format hors_champ (sandbox, sans réseau)
 - `outils/verify_articles.py` — Vérification format articles (sandbox, sans réseau)
 - `outils/audit_db.py` — Audit hebdomadaire (doublons, champs manquants, regex-traps anti-hallucination)
@@ -281,7 +309,7 @@ Le prompt doit inclure une base de connaissances des patterns de deadlines :
 - Ne PAS utiliser WebFetch sur les sites éditeurs (ascopubs.org, ashpublications.org, nature.com → bloqués)
 - Ignorer les timeouts bioRxiv/Semantic Scholar et continuer
 - notifyOnCompletion: true sur chaque tâche
-- **APIs de citations bloquées** : Semantic Scholar, OpenAlex ET CrossRef sont tous bloqués par le proxy réseau (sandbox ET Cowork). Les citations ne peuvent pas être mises à jour automatiquement pour le moment. Si le blocage est levé, lancer : `python3 outils/update_citations.py . --batch-size 50 --delay 1.5`
+- **APIs de citations** : bloquées depuis le sandbox Python (toutes, testées 2026-04), mais accessibles via Chrome MCP (réseau du navigateur d'Alexis). Workflow mensuel via `outils/prepare_citations_update.py` + javascript_tool OpenAlex + `outils/apply_citations_update.py`. Domaine `api.openalex.org` doit être dans l'allowlist de l'extension Claude in Chrome.
 
 ## Commandes utiles
 
