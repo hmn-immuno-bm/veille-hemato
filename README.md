@@ -1,30 +1,46 @@
 # Veille Hémato-Immuno-Oncologie
 
-Dashboard interactif de veille bibliographique en hémato-immuno-oncologie, avec focus sur la biopsie liquide (ctDNA) et les lymphomes B.
+Système automatisé de veille bibliographique en hématologie, immuno-oncologie et biopsie liquide.
 
-## Contenu
+## Architecture
 
-558 articles curés couvrant 2012–2026, répartis en 7 catégories : Lymphomes, ctDNA — Lymphomes, Immuno + ctDNA/Lymphome, ctDNA — Méthodo, Hémato générale, IA + Hémato, Preprints.
+- **Base de données** : `output/articles_db.json` — stockage centralisé des articles (JSON pur)
+- **Dashboard** : `output/index.html` — interface interactive avec feedback et filtrage
+- **Tâches planifiées** : recherche automatique PubMed/bioRxiv/arXiv hebdomadaire
+- **Import** : extraction des digests depuis les transcripts de sessions Cowork
 
-Le dashboard inclut également un suivi des essais cliniques en cours (lymphomes B), un calendrier des conférences hémato, des pistes de recherche transversales et un système de feedback pour affiner le scoring.
+## Outils
 
-## Accès
+| Script | Rôle |
+|--------|------|
+| `update_db.py` | Import JSON → base articles (dédup DOI+PMID+titre) |
+| `generate_dashboard.py` | Génération du dashboard HTML interactif |
+| `validate_schema.py` | Validation du schéma et cohérence inter-fichiers |
+| `audit_db.py` | Audit hebdomadaire (doublons, champs manquants, regex-traps) |
+| `prepare_citations_update.py` | Phase 1 citations : génère un snippet JS (OpenAlex/CrossRef) |
+| `apply_citations_update.py` | Phase 3 citations : merge les résultats dans la base |
+| `analyze_feedback.py` | Analyse les feedbacks utilisateur → ajustement scoring |
+| `verify_articles.py` | Vérification format articles (offline) |
+| `verify_hors_champ.py` | Vérification format hors-champ (offline) |
+| `sample_for_verification.py` | Tirage aléatoire anti-drift pour vérification PubMed |
 
-Le dashboard est déployé via GitHub Pages : un fichier HTML unique (`index.html`) avec données embarquées, sans dépendance externe.
+## Workflow de citations
 
-## Mise à jour
+Le proxy sandbox bloque les APIs de citations. Le workflow passe par Chrome MCP :
 
-Les articles sont collectés automatiquement chaque semaine via des tâches planifiées (PubMed, bioRxiv, web) puis importés manuellement dans la base après vérification. Le dashboard est régénéré à chaque import.
+1. **Phase 1** (Python) : `prepare_citations_update.py` génère un snippet JS
+2. **Phase 2** (Chrome MCP) : exécution du JS via `javascript_tool` → OpenAlex/CrossRef
+3. **Phase 3** (Python) : `apply_citations_update.py` merge les résultats
 
-Pour pousser une mise à jour :
-
-```bash
-cd ~/Library/CloudStorage/Dropbox/Veille/output
-git add index.html
-git commit -m "update dashboard"
-git push
-```
+Backends : OpenAlex (batch de 50 DOIs, défaut) et CrossRef (fallback, 1 DOI/requête).
 
 ## Stack
 
-HTML/CSS/JS vanilla (fichier unique) — Python pour l'outillage (import, validation, génération).
+- Python 3 (scripts d'import, validation, audit)
+- HTML/CSS/JS (dashboard interactif)
+- Cowork + Claude in Chrome MCP (automatisation)
+- PubMed MCP (vérification PMID, articles liés)
+
+## Auteur
+
+Alexis Claudel — AHU, Service d'hématologie, Hôpital Henri Mondor (Créteil)
