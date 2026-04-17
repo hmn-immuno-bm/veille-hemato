@@ -1,0 +1,66 @@
+[
+  {
+    "nom": "AACR 2026",
+    "lieu": "San Diego, CA, USA",
+    "date_debut": "2026-04-17",
+    "date_fin": "2026-04-22",
+    "deadline_abstract": null,
+    "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2026/"
+  },
+  {
+    "nom": "ASCO 2026",
+    "lieu": "Chicago, IL, USA",
+    "date_debut": "2026-05-29",
+    "date_fin": "2026-06-02",
+    "deadline_abstract": "2026-01-27",
+    "url": "https://www.asco.org/annual-meeting"
+  },
+  {
+    "nom": "EHA 2026",
+    "lieu": "Stockholm, Suède",
+    "date_debut": "2026-06-11",
+    "date_fin": "2026-06-14",
+    "deadline_abstract": "2026-05-07",
+    "url": "https://ehaweb.org/connect-network/eha2026-congress"
+  },
+  {
+    "nom": "ESMO 2026",
+    "lieu": "Madrid, Espagne",
+    "date_debut": "2026-10-23",
+    "date_fin": "2026-10-27",
+    "deadline_abstract": "2026-05-12",
+    "url": "https://www.esmo.org/meeting-calendar/esmo-congress-2026"
+  },
+  {
+    "nom": "ASH 2026",
+    "lieu": "New Orleans, LA, USA",
+    "date_debut": "2026-12-12",
+    "date_fin": "2026-12-15",
+    "deadline_abstract": null,
+    "url": "https://www.hematology.org/meetings/annual-meeting"
+  },
+  {
+    "nom": "SFH 2026",
+    "lieu": "Paris, France (Porte Maillot)",
+    "date_debut": "2026-03-25",
+    "date_fin": "2026-03-27",
+    "deadline_abstract": null,
+    "url": "https://sfh.hematologie.net/congres"
+  },
+  {
+    "nom": "ICML 2027",
+    "lieu": "Lugano, Suisse",
+    "date_debut": "2027-06-15",
+    "date_fin": "2027-06-19",
+    "deadline_abstract": null,
+    "url": "https://www.icml.ch/icml/home.html"
+  },
+  {
+    "nom": "iwCLL 2027",
+    "lieu": "Long Beach, CA, USA",
+    "date_debut": "2027-09-01",
+    "date_fin": "2027-09-04",
+    "deadline_abstract": null,
+    "url": "https://www.iwcll.org/"
+  }
+]

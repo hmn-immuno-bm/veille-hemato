@@ -1,0 +1,50 @@
+[
+  {
+    "semaine": "2026-S13",
+    "domaine": "Statistique — Détection de points de changement",
+    "titre": "LLM-Augmented Changepoint Detection: A Framework for Ensemble Detection and Automated Explanation",
+    "journal": "arXiv:2601.02957",
+    "doi": "https://arxiv.org/abs/2601.02957",
+    "if_value": 0,
+    "pont_methodologique": "Framework combinant 10 algorithmes de détection de changements en ensemble avec pipeline LLM pour explication contextuelle automatisée. Directement transposable au monitoring longitudinal du ctDNA : les cinétiques post-traitement (décroissance, plateau, re-ascension) constituent des séries temporelles où la détection précoce de rupture (relapse moléculaire) est critique. L'ensemble multi-algorithmes réduirait les faux positifs par rapport aux seuils fixes actuels, et le composant RAG intégrerait le contexte clinique (cycles, infections) pour expliquer chaque changement détecté.",
+    "pertinence": 5,
+    "reference_henri_mondor": "Développer un outil de monitoring ctDNA longitudinal intégrant détection de rupture multi-algorithmes + explicabilité LLM sur les cohortes DLBCL/FL suivies à Henri Mondor, en collaboration avec les bio-informaticiens de l'IMRB.",
+    "verified_at": "2026-04-17"
+  },
+  {
+    "semaine": "2026-S13",
+    "domaine": "Physique/Statistique — Transport optimal et résonance stochastique",
+    "titre": "REAMP: A Stochastic Resonance Approach for Multi-Change Point Detection in High-Dimensional Data",
+    "journal": "arXiv:2601.08084",
+    "doi": "https://arxiv.org/abs/2601.08084",
+    "if_value": 0,
+    "pont_methodologique": "REAMP utilise la théorie du transport optimal (distance Earth Mover) combinée à la résonance stochastique (concept de physique où le bruit améliore la détection du signal) pour détecter des changements structurels dans des données haute-dimension. Particulièrement pertinent pour les panels multi-analytes de biopsie liquide (fragmentomique + méthylation + mutations + protéines) où les changements simultanés signalent une évolution clonale. La méthode de double-sharpening améliorerait la résolution temporelle de la détection de résistance dans le suivi ctDNA multi-modal.",
+    "pertinence": 4,
+    "reference_henri_mondor": "Appliquer REAMP aux données longitudinales multi-omiques de biopsie liquide des patients MCL/DLBCL pour détecter précocement les changements de régime (résistance, transformation) avec meilleure sensibilité que les approches univariées.",
+    "verified_at": "2026-04-17"
+  },
+  {
+    "semaine": "2026-S14",
+    "domaine": "Statistique / Biostatistique médicale",
+    "titre": "Evaluation of Minimal Residual Disease as a Surrogate for Progression-Free Survival in Hematology Oncology Trials: A Meta-Analytic Review",
+    "journal": "arXiv:2602.21370",
+    "doi": "https://arxiv.org/abs/2602.21370",
+    "if_value": 0,
+    "pont_methodologique": "Méta-analyse de la surrogacité de la MRD (ctDNA) comme substitut à la PFS dans les essais oncologie hématologique, avec focus sur le lymphome folliculaire. Utilise des corrélations individuelles et agrégées (trial-level). Directement applicable à la valorisation des endpoints MRD/ctDNA dans la conception d'essais lymphomes B et à la défense de cette approche auprès des autorités réglementaires (FDA/EMA).",
+    "pertinence": 9,
+    "reference_henri_mondor": "Valoriser les données de ctDNA longitudinal collectées en pratique clinique (DLBCL, FL) pour constituer un jeu de données de corrélation MRD–PFS permettant de valider statistiquement le ctDNA comme endpoint de substitution dans un contexte réglementaire français/européen.",
+    "verified_at": "2026-04-17"
+  },
+  {
+    "semaine": "2026-S14",
+    "domaine": "IA / Machine learning / Multi-omics",
+    "titre": "MOTGNN: Interpretable Graph Neural Networks for Multi-Omics Disease Classification",
+    "journal": "arXiv:2508.07465",
+    "doi": "https://arxiv.org/abs/2508.07465",
+    "if_value": 0,
+    "pont_methodologique": "Framework GNN interprétable combinant XGBoost pour la construction de graphes omiques et des GNN modulaires pour la classification de maladies. Applicable à la classification moléculaire des lymphomes B à partir de données multi-omiques (ctDNA + transcriptome + méthylome).",
+    "pertinence": 6,
+    "reference_henri_mondor": "Pont avec l'approche de sous-typage moléculaire des DLBCL par ctDNA (génotypage tumoral non-invasif).",
+    "verified_at": "2026-04-17"
+  }
+]

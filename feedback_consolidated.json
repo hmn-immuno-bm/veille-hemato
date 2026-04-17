@@ -1,0 +1,82 @@
+[
+  {
+    "doi": "10.1200/JCO-25-01587",
+    "titre": "Phased Variant-Supported Circulating Tumor DNA as a Prognostic Biomarker After First-Line Treatment in Large B-Cell Lymphoma: Findings From the DIRECT Study",
+    "categorie": "ctDNA — Lymphomes",
+    "journal": "Journal of Clinical Oncology",
+    "tags": "ctDNA-pronostique, MRD-lymphome, PhasED-Seq, biomarqueur-réponse",
+    "score": 9,
+    "if_val": 45.3,
+    "feedback": "utile"
+  },
+  {
+    "doi": "10.1200/JCO-25-01712",
+    "titre": "Prospective Validation of Circulating Tumor DNA Measurable Residual Disease After First-Line Therapy in Large B-Cell Lymphoma",
+    "categorie": "ctDNA — Lymphomes",
+    "journal": "Journal of Clinical Oncology",
+    "tags": "ctDNA-pronostique, MRD-lymphome, PhasED-Seq, LBCL-traitement",
+    "score": 9,
+    "if_val": 45.3,
+    "feedback": "non noté"
+  },
+  {
+    "doi": "10.1038/s44321-026-00399-4",
+    "titre": "ctDNA monitoring using tumor-informed copy number analysis",
+    "categorie": "ctDNA — Méthodo",
+    "journal": "EMBO Molecular Medicine",
+    "tags": "ctDNA-monitoring, WGS-plasma, ctDNA-diagnostique, NGS-panel",
+    "score": 6,
+    "if_val": 11.9,
+    "feedback": "non noté"
+  },
+  {
+    "doi": "10.1016/j.ccell.2025.12.015",
+    "titre": "Axes of biological variation in diffuse large B cell lymphoma",
+    "categorie": "Lymphomes",
+    "journal": "Cancer Cell",
+    "tags": "DLBCL, single-cell, spatial-transcriptomics, microenvironnement",
+    "score": 9,
+    "if_val": 38.5,
+    "feedback": "non noté"
+  },
+  {
+    "doi": "10.1002/ajh.70229",
+    "titre": "2026 Update on the Management of Diffuse Large B-Cell Lymphoma",
+    "categorie": "Lymphomes",
+    "journal": "American Journal of Hematology",
+    "tags": "DLBCL, LBCL-traitement, guidelines-update, bispécifiques",
+    "score": 5,
+    "if_val": 13,
+    "feedback": "non noté"
+  },
+  {
+    "doi": "10.1186/s13045-025-01771-6",
+    "titre": "Multicenter real-life evaluation of the Post-CAR prognostic index for patients with large B-cell lymphoma after CAR-T failure",
+    "categorie": "Immuno + ctDNA/Lymphome",
+    "journal": "Journal of Hematology & Oncology",
+    "tags": "CAR-T, LBCL-traitement, bispécifiques, essai-clinique",
+    "score": 7,
+    "if_val": 28.5,
+    "feedback": "non noté"
+  },
+  {
+    "doi": "10.64898/2026.03.20.712678",
+    "titre": "TET2 loss promotes premalignant survival and clonal selection in MYC-driven B cell lymphoma",
+    "categorie": "Preprint",
+    "journal": "bioRxiv",
+    "tags": "DLBCL, résistance-thérapeutique, microenvironnement, MRD-lymphome",
+    "score": 5,
+    "if_val": 0,
+    "feedback": "non noté"
+  },
+  {
+    "doi": "10.1038/s41591-026-04291-z",
+    "titre": "Liquid biopsy for the diagnosis of EBV-positive Burkitt's lymphoma in endemic areas",
+    "categorie": "ctDNA — Lymphomes",
+    "journal": "Nature Medicine",
+    "tags": "ctDNA-diagnostique, fragmentomics, Burkitt, biopsie-liquide, Afrique",
+    "score": 8,
+    "if_val": 58.7,
+    "feedback": "non noté"
+  }
+]

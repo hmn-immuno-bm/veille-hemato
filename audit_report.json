@@ -1,0 +1,30 @@
+{
+  "date": "2026-04-17 14:23",
+  "total_articles": 546,
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "total": 546,
+    "avec_doi": 546,
+    "avec_pmid": 539,
+    "sans_resume": 0,
+    "sans_critique": 0,
+    "categories": {
+      "Lymphomes": 229,
+      "ctDNA — Lymphomes": 94,
+      "Immuno + ctDNA/Lymphome": 72,
+      "ctDNA — Méthodo": 68,
+      "Hémato générale": 59,
+      "IA + Hémato": 22,
+      "Preprint": 2
+    },
+    "semaines": {
+      "retro": 489,
+      "2026-S13": 31,
+      "2026-S16": 16,
+      "2026-S14": 10
+    },
+    "doublons_doi": 0,
+    "doublons_titre": 0
+  }
+}

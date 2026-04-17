@@ -1,0 +1,168 @@
+[
+  {
+    "titre": "Désescalade thérapeutique ctDNA-guided dans le LBDGC de novo",
+    "description": "Les données convergent vers une désescalade chimiothérapeutique guidée par ctDNA en LBDGC 1L. La valeur prédictive du ctDNA indétectable post-traitement est maintenant établie prospectivement (PFS 2 ans 97% vs 29%). L'étude de Makrodimitris montre que la méthylation cfDNA offre un marqueur pronostique indépendant complémentaire aux mutations. Le package fRagmentomics de Gustave Roussy unifie fragmentomique et statut mutationnel. Les designs bayésiens adaptatifs avec frontières séquentielles permettraient de concevoir un essai de désescalade optimal — analyses intermédiaires fréquentes, incorporation de la VPN du ctDNA comme prior, et critères d'arrêt formalisés. Henri Mondor pourrait piloter un bras utilisant la PhasED-seq intégrée à un design séquentiel bayésien, en collaboration avec le CEpiA pour la méthodologie.",
+    "articles_support": [
+      "10.1016/j.ebiom.2026.106236",
+      "10.1093/bioinformatics/btag152"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [
+      "NCT06693830",
+      "NCT03758989"
+    ],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Monitoring MRD multi-modal par détection de rupture dans les lymphomes B",
+    "description": "Le suivi ctDNA post-traitement repose aujourd'hui sur des seuils fixes (détectable/indétectable) qui ignorent la dynamique temporelle. Deux approches statistiques cross-disciplinaires offrent un saut qualitatif : la détection de changements multi-algorithmes (changepoint detection) avec explicabilité LLM, et la résonance stochastique haute-dimension pour les panels multi-analytes. Combinées avec le package fRagmentomics (intégration fragmentomique + mutations) et l'estimation ctDNA par méthylation, ces méthodes permettraient un monitoring longitudinal multi-modal sensible aux changements de régime (rechute, résistance, transformation). L'étude Kamitaki (Nature) montre par ailleurs que le WGS du cfDNA peut capturer des signaux viraux (EBV) en plus du ctDNA tumoral, enrichissant encore le panel d'analytes. Henri Mondor dispose des cohortes DLBCL/FL avec suivi longitudinal pour piloter ce projet, potentiellement en collaboration avec Gustave Roussy (fRagmentomics) et l'IMRB (bio-informatique).",
+    "articles_support": [
+      "10.1093/bioinformatics/btag152",
+      "10.1016/j.ebiom.2026.106236",
+      "10.1038/s41586-026-10288-y"
+    ],
+    "hors_champ_refs": [
+      "LLM-Augmented Changepoint Detection: A Framework for Ensemble Detection and Automated Explanation",
+      "REAMP: A Stochastic Resonance Approach for Multi-Change Point Detection in High-Dimensional Data"
+    ],
+    "trials_refs": [],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Stratification MRD par ctDNA dans les essais bispécifiques de première ligne",
+    "description": "Trois essais randomisés de phase 3 évaluent les bispécifiques en 1L LBDGC (EPCORE DLBCL-2 avec epcoritamab, OLYMPIA-3 avec odronextamab, STARGLO avec glofitamab). Aucun n'intègre encore le ctDNA comme critère de stratification ou d'adaptation thérapeutique. Or les données de validation prospective montrent que la clearance ctDNA précoce identifie des patients en rémission moléculaire profonde qui pourraient bénéficier d'un arrêt anticipé du bispécifique, tandis que les patients ctDNA+ persistants pourraient être orientés vers une consolidation (CAR-T, allo-greffe). L'ajout du sTNFR2 sérique comme biomarqueur complémentaire du microenvironnement enrichirait la stratification. Henri Mondor pourrait proposer une étude ancillaire ctDNA sur les cohortes françaises de ces essais.",
+    "articles_support": [
+      "10.1182/blood.2025030859",
+      "10.1002/ajh.70293"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [
+      "NCT05578976",
+      "NCT06091865",
+      "NCT04408638"
+    ],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Combinaisons BTK + BCL2 dans le MCL R/R : vers une chimiothérapie-free durable",
+    "description": "L'essai de phase 3 CELESTIAL-RRMCL (NCT06742996) teste sonrotoclax (nouveau BCL2i, Breakthrough Therapy FDA) + zanubrutinib (BTK2i) vs zanubrutinib seul dans le MCL R/R. Les données préliminaires de phase 1/2 montrent des réponses durables. Cette combinaison double ciblage BTK+BCL2 suit le modèle CLL (venetoclax+ibrutinib). Explorer le monitoring par ctDNA (variants MYD88, TP53, BTK C481S, CCND1 rearrangement) pendant la combinaison pour détecter précocement les résistances et guider la durée de traitement.",
+    "articles_support": [],
+    "hors_champ_refs": [],
+    "trials_refs": [
+      "NCT06742996"
+    ],
+    "priorite": "moyenne"
+  },
+  {
+    "titre": "MRD/ctDNA comme endpoint de substitution réglementaire dans les essais lymphomes",
+    "description": "Le preprint arXiv:2602.21370 (She et al., février 2026) fournit une revue méta-analytique de la surrogacité de la MRD pour la PFS dans les essais hémato-oncologiques, avec focus FL. La FDA a approuvé la MRD comme endpoint accéléré en myélome multiple. Ce mouvement réglementaire s'étend progressivement aux lymphomes B. Valoriser les données de ctDNA longitudinal collectées en pratique clinique (DLBCL, FL) pour constituer un jeu de données de corrélation MRD–PFS permettant de valider statistiquement le ctDNA comme endpoint de substitution dans un contexte réglementaire français/européen.",
+    "articles_support": [],
+    "hors_champ_refs": [
+      "Evaluation of Minimal Residual Disease as a Surrogate for Progression-Free Survival in Hematology Oncology Trials: A Meta-Analytic Review"
+    ],
+    "trials_refs": [],
+    "priorite": "haute"
+  },
+  {
+    "titre": "ctDNA du LCR pour le diagnostic de l'atteinte SNC dans les B-NHL à haut risque",
+    "description": "L'étude LIBERTY (NCT06090162) évalue prospectivement le ctDNA dans le LCR comme outil diagnostique de l'atteinte SNC. Parallèlement, NCT05803616 explore la biopsie liquide pour le monitoring MRD des syndromes lymphoprolifératifs immune-médiés. La combinaison ctDNA plasmatique + ctDNA du LCR offrirait un monitoring complet (systémique + compartimental) directement pertinent pour les DLBCL à haut risque CNS-IPI ≥4 traités à Henri Mondor.",
+    "articles_support": [],
+    "hors_champ_refs": [],
+    "trials_refs": [
+      "NCT06090162",
+      "NCT05803616"
+    ],
+    "priorite": "moyenne"
+  },
+  {
+    "titre": "Standardisation inter-laboratoires de la MRD ctDNA en LBCL",
+    "description": "L'étude DIRECT montre que la LoD95 varie de plus de 2 logs entre patients, soulignant le besoin critique de standardisation. Les matériaux de référence nucléosomaux (Hong et al.) offrent une approche transférable au ctDNA lymphome. Un programme d'EQA inter-laboratoires utilisant des standards ctDNA calibrés permettrait d'harmoniser les seuils de MRD et de rendre les résultats comparables entre essais cliniques. Henri Mondor pourrait initier un consortium français de standardisation MRD.",
+    "articles_support": [
+      "10.1200/JCO-25-01587"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Complémentarité EVs et ctDNA pour le monitoring du DLBCL",
+    "description": "Maltoni et al. démontrent que les S-EVs et L-EVs capturent des informations biologiques complémentaires sur la tumeur et son microenvironnement. Combiner le ctDNA (mutations, MRD) avec l'analyse des EVs (cargo mRNA/miRNA reflétant le TME) pourrait créer un panel de biopsie liquide multimodal plus informatif que chaque approche isolée. L'intégration avec les données de l'étude DIRECT sur la PV-MRD permettrait d'explorer si les EVs ajoutent une valeur pronostique indépendante.",
+    "articles_support": [
+      "10.1002/jev2.70259",
+      "10.1200/JCO-25-01587"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [],
+    "priorite": "moyenne"
+  },
+  {
+    "titre": "Monitoring ctDNA sériel de l'évolution clonale sous traitement du MCL",
+    "description": "Nikkarinen et al. montrent que la chimio-immunothérapie accélère l'accumulation de mutations à haut risque dans le MCL. Loh et al. confirment que le ctDNA peut détecter la MRD dans le MCL. Combiner ces approches — monitoring ctDNA sériel ciblant spécifiquement les mutations de résistance (TP53, CDKN2A, NF-κB) — permettrait de détecter l'émergence clonale avant la rechute clinique et d'adapter le traitement ciblé (BTKi, bispécifiques) en temps réel.",
+    "articles_support": [
+      "10.1038/s41375-026-02861-1",
+      "10.3324/haematol.2025.288185"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Optimisation de la séquence bridging RT — CAR-T guidée par ctDNA",
+    "description": "Loap et al. proposent un cadre evidence-based pour la RT de bridging pré-CAR-T. L'intégration du ctDNA comme biomarqueur de réponse au bridging (cinétique de clairance ctDNA post-RT) pourrait personnaliser la décision de procéder à l'infusion CAR-T. L'étude DIRECT fournit le cadre analytique (PV-MRD) applicable à ce monitoring. Henri Mondor, avec ses compétences en biopsie liquide, pourrait piloter un essai ancillaire mesurant le ctDNA pré/post-bridging chez les patients LBCL candidats au CAR-T.",
+    "articles_support": [
+      "10.1016/j.critrevonc.2026.105181",
+      "10.1200/JCO-25-01587"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [],
+    "priorite": "moyenne"
+  },
+  {
+    "titre": "Hématopoïèse clonale comme biomarqueur prédictif de réponse/toxicité aux thérapies cellulaires du B-NHL",
+    "description": "Wiegand et al. (Blood, PMID 41490454) établissent que 55 % des B-NHL présentent des mutations CH, dont 41 % partagent des clones identiques avec la tumeur. Cette signature pourrait prédire : (1) risque de transformation en FL/MCL/MZL indolents (mutations lymphoma-associated dans les progéniteurs), (2) toxicité CAR-T (CH TET2/DNMT3A et CRS/ICANS connus), (3) échec CAR-T (clonalité T préexistante). À croiser avec le registre DESCAR-T français (André et al., PMID 41952624) : Henri Mondor dispose des échantillons pré-CAR-T nécessaires pour une étude rétrospective sur T/HRBCL et autres sous-types. Collaboration naturelle avec la plateforme CH de l'APHP.",
+    "articles_support": [
+      "10.1182/blood.2025030489",
+      "10.3324/haematol.2025.289196",
+      "10.1038/s41467-026-71395-y"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Transposition du cfDNA méthylome multi-maladies à la MRD lymphome B",
+    "description": "Zeng et al. (PNAS, PMID 41941615) démontrent un méthylome cfDNA cost-effective (AUROC 0,94 multicancer, 0,93 surveillance CHC) sur 1 061 individus. Aucun lymphome dans leur cohorte. Opportunité : appliquer leur pipeline à la MRD DLBCL/FL post-CAR-T et post-R-CHOP. Comparer : (1) sensibilité vs CAPP-Seq/Phased Variants sur les cas Henri Mondor déjà ctDNA-profilés, (2) complémentarité fragmentomique + méthylation vs mutationnel seul, (3) coût pour un suivi trimestriel.",
+    "articles_support": [
+      "10.1073/pnas.2518347123",
+      "10.3324/haematol.2025.289129"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Désescalade chimiothérapie dans les lymphomes précoces : état des lieux 2026 et place de la MRD",
+    "description": "Convergence de trois publications cette semaine vers des régimes chemo-light/chemo-free : phase 2 AN+AD dans le cHL précoce (Abramson : CR 92 %, PFS 97 %), FLUORO pour le FL naïf (chemo-free atezo+obinu+RT 4 Gy), et revue DLBCL (Falade/Ansell). Question ouverte : la MRD ctDNA peut-elle guider la durée/intensité de ces régimes ?",
+    "articles_support": [
+      "10.1182/blood.2025030190",
+      "10.1111/bjh.70468",
+      "10.1016/j.mayocp.2026.01.017",
+      "10.1182/blood.2025032560"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [],
+    "priorite": "moyenne"
+  },
+  {
+    "titre": "Résistance aux BTKi dans le DLBCL : cibles ARN et CAR-T in vivo comme nouvelles stratégies",
+    "description": "Álvarez-Corrales et al. (Leukemia) identifient miR-28 comme bloqueur de l'émergence de clones ABC-DLBCL résistants à l'ibrutinib, avec validation sur PHOENIX et preuve de concept par nanoparticules aptamères. En parallèle, Ibrahim et al. (Nat Commun) démontrent la génération CAR-T in vivo par LV pseudotypé DMV anti-CD7 chez la souris.",
+    "articles_support": [
+      "10.1038/s41375-026-02948-9",
+      "10.1038/s41467-026-71395-y",
+      "10.1016/j.canlet.2026.218488"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [],
+    "priorite": "moyenne"
+  }
+]
