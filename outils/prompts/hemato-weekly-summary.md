@@ -39,6 +39,12 @@ ctDNA, MRD, biopsie-liquide, fragmentomique, méthylation, DLBCL, FL, MCL, Hodgk
 
 **Format semaine** : `YYYY-SNN` avec préfixe **S** (PAS W). Exemple : `"2026-S14"` ✅ — `"2026-W14"` ❌
 
+**Calcul de la semaine** : La semaine est celle **couverte par les articles**, PAS celle de l'exécution de la tâche.
+- Prendre la date de publication médiane des articles du lot (ou la date de début de la plage de recherche du hemato-weekly-search)
+- Calculer le numéro de semaine ISO de cette date
+- Exemple : si hemato-weekly-search a cherché les articles du 6-12 avril 2026, la semaine est S15 (ISO week du 6 avril = lundi de S15), même si la tâche summary s'exécute le 15 avril (S16)
+- ⛔ NE PAS utiliser la date d'exécution de la tâche pour déterminer la semaine
+
 **Catégories valides** (exactement ces chaînes) :
 `Hémato générale`, `Lymphomes`, `ctDNA — Lymphomes`, `ctDNA — Méthodo`, `Immuno + ctDNA/Lymphome`, `IA + Hémato`, `Preprint`
 
