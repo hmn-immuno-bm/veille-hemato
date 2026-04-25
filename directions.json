@@ -164,5 +164,57 @@
     "hors_champ_refs": [],
     "trials_refs": [],
     "priorite": "moyenne"
+  },
+  {
+    "titre": "Harmoniser le seuil MRD ctDNA à C2/C4 en lymphomes B agressifs post-LYSA",
+    "description": "L'étude Camus et al. montre qu'en PMBL traité par R-CHOP14/R-ACVBP, MRD4 a une PPV de 89% (vs 50% pour PET4) avec un HR 78 pour la PFS. Couplé à la modélisation de sojourn time de Hubbell et al. (médiane 2,45 ans pour lymphome — IC très large), il y a un besoin urgent de calibrer prospectivement les seuils MRD à C2 et C4 dans la cohorte LYSA élargie (DLBCL + PMBL + HGBL) avec une plateforme unifiée d'analyse ctDNA. Le framework méthylome de Janssen et al. (GCT) suggère en complément qu'un panel ctDNA méthylome-based pourrait augmenter la sensibilité là où le panel mutationnel est limité (tumeurs à faible TMB).",
+    "articles_support": [
+      "10.1182/bloodadvances.2025019108",
+      "10.1002/cncr.70380"
+    ],
+    "hors_champ_refs": [
+      "Identification and validation of liquid biopsy-based methylation biomarkers for germ cell tumor subtypes"
+    ],
+    "trials_refs": [],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Intégration MoE PET/CT + ctDNA + EHR pour stratification MCL",
+    "description": "Jiang et al. démontrent qu'un modèle MoE fusionnant PET/CT radiomique et EHR atteint un C-index 0,78 en validation externe dans le MCL — supérieur à MIPI. Couplé au profiling scMultiomique de Yan et al. (résistance pirtobrutinib via RAD21/SMC3) et à la revue Tavarozzi et al., l'opportunité est d'ajouter une couche ctDNA longitudinale à cette architecture MoE pour stratifier les MCL TP53-aberrants vers BOVén (Danilov et al. BTG 2025) ou CAR-T post-BTKi. Le framework multi-stain DL de Zhao et al. (hydatidiform mole) offre un template pour le versant pathologique assisté (blastoïd, pléomorphe, TdT+).",
+    "articles_support": [
+      "10.1186/s12916-026-04865-1",
+      "10.1002/ajh.70304",
+      "10.1038/s41375-026-02942-1",
+      "10.1002/cncr.70389"
+    ],
+    "hors_champ_refs": [
+      "Patch-to-slide fusion deep learning model for histological diagnosis of early pregnancy loss including hydatidiform mole"
+    ],
+    "trials_refs": [],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Surveillance ctDNA longitudinale post-CAR-T : rechute vs LPD secondaire",
+    "description": "La revue Ali et al. (Nat Rev Clin Oncol) pose le cadre des post-CAR-T lymphoproliférations (transgène+ et -) avec implications pharmacovigilance. En parallèle, l'essai dCAR-T DAC-primed de Wang et al. (CRR 87%, PFS 77% à 2 ans) et TAK-007 de Darrah et al. (ORR 60,9%, réponses ctDNA-neg) montrent une diversification des produits. Une stratégie de surveillance ctDNA différentielle (panel lymphome initial + panel T-cell pan-cancer + intégration CAR-transgène) permettrait de discriminer précocement rechute B-NHL vs émergence LPD T-cell secondaire — question clinique pressante à Henri Mondor et ailleurs. Le modèle Arai et al. (CRS-PRE) ancre la nécessité d'un biomarker pré-infusion complémentaire.",
+    "articles_support": [
+      "10.1038/s41571-026-01147-w",
+      "10.1038/s41467-026-72040-4",
+      "10.1158/2643-3230.BCD-25-0323-A",
+      "10.1111/bjh.70488"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Repositionnement méthotrexate et diméthyl fumarate en DLBCL : axes métabolo-immuns",
+    "description": "Deux publications cette semaine convergent vers le métabolisme comme cible actionnable dans DLBCL : Wang Z et al. identifient l'axe IRF4-PAICS-LDHA comme hub immunosuppresseur dont l'inhibition (MTX, knockdown LDHA) restaure l'activité CD8+, et Liu Y et al. montrent que l'inhibition PRMT5 sensibilise les DLBCL/MCL à la ferroptose induite par DMF (fumarate de diméthyle). Les deux approches partagent un même mécanisme d'épuisement du GSH/cystéine. Une étude de phase Ib MTX bas-dose + DMF + PRMT5i ± immunothérapie chez DLBCL R/R pourrait tester cette synergie métabolo-immune. Henri Mondor dispose de l'expertise DLBCL + microenvironnement tumoral (équipe Gaulard/Lechapt).",
+    "articles_support": [
+      "10.1038/s41698-026-01428-8",
+      "10.1038/s41375-026-02932-3"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [],
+    "priorite": "moyenne"
   }
 ]
