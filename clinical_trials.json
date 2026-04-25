@@ -14,7 +14,9 @@
     "resume": "Essai randomisé comparant epcoritamab SC au choix investigateur (R-GemOx ou BR) en LBDGC R/R après ≥2 lignes. Amélioration PFS et RC mais pas de bénéfice OS statistiquement significatif.",
     "has_ctdna": false,
     "last_updated": "2026-04-01",
-    "lysa": false
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT04628494"
   },
   {
     "nct_id": "NCT05578976",
@@ -31,24 +33,28 @@
     "resume": "Epcoritamab + R-CHOP en 1ère ligne LBDGC IPI élevé. Phase 1b/2 (EPCORE NHL-2): ORR 98%, RC 85%.",
     "has_ctdna": false,
     "last_updated": "2026-04-01",
-    "lysa": false
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT05578976"
   },
   {
     "nct_id": "NCT06091865",
     "titre": "OLYMPIA-3 – Odronextamab + CHOP vs R-CHOP en 1L LBDGC",
     "phase": "Phase 3",
-    "statut": "Recruiting",
+    "statut": "Active, not recruiting",
     "sous_type": "DLBCL",
     "sponsor": "Regeneron",
     "centres_fr": "Oui",
-    "n_patients": "840",
-    "date_debut": "2024-01",
+    "n_patients": "904",
+    "date_debut": "2023-12",
     "date_fin_est": "2029-12",
     "endpoints": "PFS; OS, ORR, CR",
     "resume": "Odronextamab-CHOP vs R-CHOP en 1L LBDGC. Part 1A (n=22): CR 100% au DL2. ~200 sites, 24 pays.",
     "has_ctdna": false,
     "last_updated": "2026-04-01",
-    "lysa": false
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT06091865"
   },
   {
     "nct_id": "NCT05364424",
@@ -65,7 +71,9 @@
     "resume": "Glofitamab + R-ICE chez LBDGC R/R éligibles greffe ou CAR-T.",
     "has_ctdna": false,
     "last_updated": "2026-04-01",
-    "lysa": false
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT05364424"
   },
   {
     "nct_id": "NCT04408638",
@@ -82,7 +90,9 @@
     "resume": "Suivi 3 ans: glofit-GemOx double la OS médiane (25.5 vs 12.5 mois) vs R-GemOx. Approuvé >35 pays.",
     "has_ctdna": false,
     "last_updated": "2026-03-30",
-    "lysa": false
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT04408638"
   },
   {
     "nct_id": "NCT05848765",
@@ -90,50 +100,56 @@
     "phase": "Phase 2",
     "statut": "Recruiting",
     "sous_type": "FL",
-    "sponsor": "LYSA/académique",
-    "centres_fr": "Oui",
-    "n_patients": "~300",
+    "sponsor": "University of Birmingham",
+    "centres_fr": "Non",
+    "n_patients": "284",
     "date_debut": "2023-09",
-    "date_fin_est": "2028-12",
-    "endpoints": "PFS; ORR, OS, DOR",
-    "resume": "Essai randomisé comparant différentes stratégies dans le FL R/R.",
+    "date_fin_est": "2031-11",
+    "endpoints": "CMR à 24 semaines (PET-CT Deauville); ORR, PFS, OS, DOR",
+    "resume": "Essai randomisé phase 2 (plateforme séquentielle) comparant epcoritamab + lenalidomide vs chimiothérapie au choix investigateur (R-CHOP, RCVP, BR, R2, OB) en LF R/R. Centres UK uniquement.",
     "has_ctdna": false,
     "last_updated": "2026-04-01",
-    "lysa": true
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT05848765"
   },
   {
     "nct_id": "NCT04680052",
-    "titre": "Tafasitamab + lenalidomide + rituximab en LF R/R",
+    "titre": "Tafasitamab + lenalidomide + rituximab en LF/MZL R/R",
     "phase": "Phase 3",
     "statut": "Active",
     "sous_type": "FL",
-    "sponsor": "Roche/Genentech",
+    "sponsor": "Incyte Corporation",
     "centres_fr": "Oui",
-    "n_patients": "~500",
+    "n_patients": "654",
     "date_debut": "2021-03",
     "date_fin_est": "2027-06",
     "endpoints": "PFS; CR, ORR, OS",
-    "resume": "Essai évaluant tafasitamab (anti-CD19) + lenalidomide + rituximab en lymphome folliculaire R/R. ATTENTION: drogue précédemment notée à tort comme mosunetuzumab.",
+    "resume": "Essai phase 3 randomisé évaluant tafasitamab (anti-CD19) + lenalidomide + rituximab vs placebo + lenalidomide + rituximab en lymphome folliculaire ou lymphome de la zone marginale R/R. Sponsor: Incyte.",
     "has_ctdna": false,
     "last_updated": "2026-04-01",
-    "lysa": false
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT04680052"
   },
   {
     "nct_id": "NCT06112847",
-    "titre": "EPCORE FL-1 – Epcoritamab + lenalidomide en LF R/R",
+    "titre": "Lenalidomide + epcoritamab en LF non traité (City of Hope)",
     "phase": "Phase 2",
     "statut": "Suspended",
     "sous_type": "FL",
-    "sponsor": "Genmab/AbbVie",
-    "centres_fr": "Oui",
-    "n_patients": "488",
-    "date_debut": "2023-11",
+    "sponsor": "City of Hope Medical Center",
+    "centres_fr": "Non",
+    "n_patients": "29",
+    "date_debut": "2024-01",
     "date_fin_est": "2027-12",
     "endpoints": "PFS, CR rate; ORR, OS, DOR",
-    "resume": "Essai single-arm epcoritamab + lenalidomide en LF R/R (pas un comparatif vs R²). Suspendu après objectif atteint.",
+    "resume": "Essai phase 2 single-arm évaluant lenalidomide + epcoritamab en LF non traité. Sponsor académique (City of Hope). NB: Ce N est PAS l essai EPCORE FL-1 de Genmab/AbbVie.",
     "has_ctdna": false,
     "last_updated": "2026-04-01",
-    "lysa": false
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT06112847"
   },
   {
     "nct_id": "NCT04662255",
@@ -150,7 +166,9 @@
     "resume": "Pirtobrutinib (BTKi non-covalent) vs acalabrutinib ou zanubrutinib chez LCM naïfs de BTKi. ~160 sites, 24 pays.",
     "has_ctdna": false,
     "last_updated": "2026-04-01",
-    "lysa": false
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT04662255"
   },
   {
     "nct_id": "NCT04002297",
@@ -167,7 +185,9 @@
     "resume": "Zanubrutinib+rituximab suivi zanubrutinib entretien vs BR en 1L LCM non éligible greffe.",
     "has_ctdna": false,
     "last_updated": "2026-04-01",
-    "lysa": false
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT04002297"
   },
   {
     "nct_id": "NCT03112174",
@@ -184,24 +204,28 @@
     "resume": "Ibrutinib+venetoclax vs ibrutinib+placebo en LCM R/R. Efficacité aussi en 1L TP53 mutés. Données MRD intégrées.",
     "has_ctdna": true,
     "last_updated": "2026-04-01",
-    "lysa": false
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT03112174"
   },
   {
     "nct_id": "NCT06693830",
-    "titre": "SHORTEN-ctDNA – Désescalade guidée par ctDNA en LBDGC 1L",
+    "titre": "ctDNA-guided Therapy Optimization in Newly Diagnosed DLBCL",
     "phase": "Not Applicable",
     "statut": "Recruiting",
     "sous_type": "DLBCL",
-    "sponsor": "Académique",
-    "centres_fr": "À vérifier",
-    "n_patients": "~200",
-    "date_debut": "2024-10",
+    "sponsor": "Hua-Jay J Cherng, MD (académique)",
+    "centres_fr": "Non",
+    "n_patients": "40",
+    "date_debut": "2024-12",
     "date_fin_est": "2028-12",
     "endpoints": "Taux RC fin traitement; PFS, OS",
-    "resume": "Désescalade chimiothérapie guidée par ctDNA. RC iPET4 + ctDNA indétectable → rituximab seul.",
+    "resume": "Essai pilote d optimisation thérapeutique guidée par ctDNA en LBDGC 1L nouvellement diagnostiqué. Investigateur individuel, petit effectif.",
     "has_ctdna": true,
     "last_updated": "2026-04-01",
-    "lysa": false
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT06693830"
   },
   {
     "nct_id": "NCT03758989",
@@ -209,16 +233,18 @@
     "phase": "Phase 2",
     "statut": "Recruiting",
     "sous_type": "DLBCL",
-    "sponsor": "NCI/ECOG-ACRIN",
+    "sponsor": "University of Rochester",
     "centres_fr": "Non",
-    "n_patients": "~150",
+    "n_patients": "40",
     "date_debut": "2019-06",
     "date_fin_est": "2026-12",
     "endpoints": "PFS; ctDNA clearance, OS",
     "resume": "ctDNA pour guider la thérapie adaptée PET en LBDGC stade limité. Validation prospective du ctDNA comme biomarqueur MRD.",
     "has_ctdna": true,
     "last_updated": "2026-04-01",
-    "lysa": false
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT03758989"
   },
   {
     "nct_id": "NCT03907488",
@@ -235,7 +261,9 @@
     "resume": "N-AVD vs BV-AVD en 1L Hodgkin stade III/IV. PFS 3 ans: 91% vs 82%. FDA approval mars 2026.",
     "has_ctdna": false,
     "last_updated": "2026-03-30",
-    "lysa": false
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT03907488"
   },
   {
     "nct_id": "NCT03053440",
@@ -252,7 +280,9 @@
     "resume": "Zanubrutinib vs ibrutinib en MW. VGPR+CR 36.3% vs 25.3%. Meilleur profil tolérance zanubrutinib.",
     "has_ctdna": false,
     "last_updated": "2026-04-01",
-    "lysa": false
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT03053440"
   },
   {
     "nct_id": "NCT04624906",
@@ -269,7 +299,9 @@
     "resume": "Triple combinaison BR + acalabrutinib en 1L Waldenström.",
     "has_ctdna": false,
     "last_updated": "2026-04-01",
-    "lysa": false
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT04624906"
   },
   {
     "nct_id": "NCT02203526",
@@ -286,7 +318,9 @@
     "resume": "Ibrutinib + TEDDI-R en LPSNC. Ibrutinib traverse la BHE.",
     "has_ctdna": false,
     "last_updated": "2026-04-01",
-    "lysa": false
+    "lysa": false,
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT02203526"
   },
   {
     "nct_id": "NCT06742996",
@@ -304,43 +338,49 @@
     "has_ctdna": false,
     "lysa": false,
     "source": "clinicaltrials.gov",
-    "last_updated": "2026-04-01"
+    "last_updated": "2026-04-01",
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT06742996"
   },
   {
     "nct_id": "NCT06090162",
     "titre": "LIBERTY – Biopsie liquide (ctDNA LCR) pour diagnostiquer et surveiller l atteinte SNC dans les B-NHL",
-    "phase": "N/A (étude diagnostique prospective)",
-    "statut": "Recruiting",
+    "phase": "Not Applicable",
+    "statut": "Active, not recruiting",
     "sous_type": "DLBCL",
-    "sponsor": "Académique (multicenter)",
-    "centres_fr": "Oui",
-    "n_patients": "~100",
-    "date_debut": "2023-10",
+    "sponsor": "Swiss Cancer Institute",
+    "centres_fr": "Non",
+    "n_patients": "64",
+    "date_debut": "2024-03",
     "date_fin_est": "",
     "endpoints": "Spécificité du ctDNA dans le LCR vs cytologie conventionnelle et cytométrie en flux pour la détection de l atteinte SNC",
     "resume": "Étude prospective multicentrique évaluant le ctDNA dans le LCR comme outil diagnostique de l atteinte SNC dans les B-NHL à haut risque nouvellement diagnostiqués. Hypothèse : le ctDNA améliore la détection de l atteinte SNC (2-5% des cas, pronostic sombre).",
     "has_ctdna": true,
     "lysa": false,
     "source": "clinicaltrials.gov",
-    "last_updated": "2026-04-01"
+    "last_updated": "2026-04-01",
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT06090162"
   },
   {
     "nct_id": "NCT05803616",
     "titre": "Biopsie liquide pour le diagnostic et la surveillance des syndromes lymphoprolifératifs immune-médiés",
-    "phase": "N/A (étude observationnelle / diagnostique)",
-    "statut": "Active",
+    "phase": "Phase 1",
+    "statut": "Unknown status",
     "sous_type": "DLBCL",
-    "sponsor": "Académique (Suisse)",
+    "sponsor": "University Hospital, Geneva",
     "centres_fr": "Non (Suisse)",
-    "n_patients": "~50",
-    "date_debut": "2023-06",
+    "n_patients": "20",
+    "date_debut": "2022-05",
     "date_fin_est": "",
     "endpoints": "Monitorage MRD par ctDNA ; exploration microenvironnement tumoral et paysage génétique/épigénétique",
     "resume": "Étude prospective utilisant la biopsie liquide (ctDNA) pour monitorer la MRD pendant le traitement de syndromes lymphoprolifératifs immune-médiés (ILD, WHO HAEM5). Utilise NGS, multiplex IHC, ddPCR et méthylome.",
     "has_ctdna": true,
     "lysa": false,
     "source": "clinicaltrials.gov",
-    "last_updated": "2026-04-01"
+    "last_updated": "2026-04-01",
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT05803616"
   },
   {
     "nct_id": "NCT06054776",
@@ -348,17 +388,19 @@
     "phase": "Phase 2",
     "statut": "Recruiting",
     "sous_type": "MCL",
-    "sponsor": "NCI (ETCTN)",
+    "sponsor": "City of Hope Medical Center",
     "centres_fr": "Non (USA)",
-    "n_patients": "~40",
-    "date_debut": "2023-10",
+    "n_patients": "40",
+    "date_debut": "2024-12",
     "date_fin_est": "",
     "endpoints": "À vérifier",
     "resume": "Combinaison triple BTKi 2e gen (acalabrutinib) + anti-CD20 type II (obinutuzumab) + bispécifique CD20×CD3 (glofitamab) pour le MCL R/R.",
     "has_ctdna": false,
     "lysa": false,
     "source": "clinicaltrials.gov",
-    "last_updated": "2026-04-01"
+    "last_updated": "2026-04-01",
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT06054776"
   },
   {
     "nct_id": "NCT04663347",
@@ -376,7 +418,9 @@
     "has_ctdna": false,
     "lysa": false,
     "source": "clinicaltrials.gov",
-    "last_updated": "2026-04-01"
+    "last_updated": "2026-04-01",
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT04663347"
   },
   {
     "nct_id": "NCT05890352",
@@ -394,7 +438,9 @@
     "has_ctdna": false,
     "lysa": false,
     "source": "clinicaltrials.gov",
-    "last_updated": "2026-04-01"
+    "last_updated": "2026-04-01",
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT05890352"
   },
   {
     "nct_id": "NCT05675410",
@@ -402,9 +448,9 @@
     "phase": "Phase 3",
     "statut": "Recruiting",
     "sous_type": "Hodgkin",
-    "sponsor": "COG / SWOG / ECOG-ACRIN / Alliance / NRG",
+    "sponsor": "NCI (COG/SWOG/ECOG-ACRIN/Alliance/NRG)",
     "centres_fr": "Non (Amérique du Nord)",
-    "n_patients": "~1000",
+    "n_patients": "1875",
     "date_debut": "2023-04",
     "date_fin_est": "",
     "endpoints": "PFS, EFS (response-adapted)",
@@ -412,7 +458,9 @@
     "has_ctdna": false,
     "lysa": false,
     "source": "clinicaltrials.gov",
-    "last_updated": "2026-04-01"
+    "last_updated": "2026-04-01",
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT05675410"
   },
   {
     "nct_id": "NCT05253118",
@@ -420,7 +468,7 @@
     "phase": "Phase 2",
     "statut": "Active, not recruiting",
     "sous_type": "PCNSL",
-    "sponsor": "Korean Cancer Study Group (LY22-07)",
+    "sponsor": "Seoul National University Hospital",
     "centres_fr": "Non (Corée)",
     "n_patients": "28",
     "date_debut": "2022-06",
@@ -430,6 +478,8 @@
     "has_ctdna": false,
     "lysa": false,
     "source": "clinicaltrials.gov",
-    "last_updated": "2026-04-01"
+    "last_updated": "2026-04-01",
+    "verified_at": "2026-04-25",
+    "verified_source": "https://clinicaltrials.gov/study/NCT05253118"
   }
 ]
