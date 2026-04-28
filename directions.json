@@ -216,5 +216,65 @@
     "hors_champ_refs": [],
     "trials_refs": [],
     "priorite": "moyenne"
+  },
+  {
+    "titre": "ctDNA-MRD comme biomarqueur intégré post-thérapie cellulaire en lymphome B agressif",
+    "description": "Convergence TRANSFORM (Stepan, JCO) + PCNSL (Yang, AJH) + cinétique lymphocytaire (Dingli, BJH). Stratégie de stratification post-CAR-T basée sur cinétique ctDNA testable à Mondor.",
+    "articles_support": [
+      "10.1200/JCO-25-03051",
+      "10.1002/ajh.70342",
+      "10.1111/bjh.70502"
+    ],
+    "hors_champ_refs": [
+      "Tandem Mass Spectrometry Fingerprint Tags (TMSFT) Applied for Early Gestation Noninvasive Prenatal Detection of Single-Gene Disorders."
+    ],
+    "trials_refs": [],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Profilage ctDNA des CNAs comme outil de stratification pronostique en LBCL",
+    "description": "Arffman (Leukemia) : ctDNA ciblé capture 76% CNAs, TP53 par ctDNA > FISH 17p. Intégration dans le panel ctDNA-Mondor. Validation prospective multicentrique requise.",
+    "articles_support": [
+      "10.1038/s41375-026-02955-w",
+      "10.3324/haematol.2025.289111",
+      "10.1200/JCO-25-03051"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Bispécifiques + ADC en MCL R/R post-BTKi : nouveau standard candidat",
+    "description": "Mosun-Pola (Budde, Blood) 88% ORR / 79% CR en MCL R/R post-BTKi incluant haut-risque. Question de séquencement vs CAR-T (ZUMA-2 5y).",
+    "articles_support": [
+      "10.1182/blood.2025032422",
+      "10.1186/s13045-026-01797-4",
+      "10.1038/s41408-026-01507-w"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Glyco-immunothérapie : moduler antigène pour potentialiser CAR-T et ADC",
+    "description": "Pan (CMI) : eliglustat potentialise CD30-CAR-T et BV via démasquage glycanique. Combinaison CAR-T/ADC + modulateurs glycaniques en lymphome B R/R.",
+    "articles_support": [
+      "10.1038/s41423-026-01421-y"
+    ],
+    "hors_champ_refs": [
+      "Clickable Universal Tumor-Antigen Equipping Strategy for Remedial Chimeric Antigen Receptor T Cells to Destroy Solid Tumors."
+    ],
+    "trials_refs": [],
+    "priorite": "moyenne"
+  },
+  {
+    "titre": "Apoptose extrinsèque et résistance dans le DLBCL ABC : la piste cFLIP",
+    "description": "Bariboloka (Blood) : cFLIP essentiel à la lymphomagenèse DLBCL Myd88+BCL2. Inhibition sensibilise ABC à Caspase-8. Cible thérapeutique potentielle.",
+    "articles_support": [
+      "10.1182/blood.2026033320"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [],
+    "priorite": "moyenne"
   }
 ]

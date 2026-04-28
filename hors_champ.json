@@ -82,5 +82,27 @@
     "pertinence": 7,
     "reference_henri_mondor": "Collaboration potentielle avec département de pathologie Henri Mondor (Gaulard, Copie-Bergman, Lechapt) + INSERM U955 pour adapter le framework au diagnostic MCL blastoïd TdT+ et double-hit DLBCL — thématique locale vue cette semaine avec Pirlog et al.",
     "verified_source": "https://pubmed.ncbi.nlm.nih.gov/42000889/"
+  },
+  {
+    "semaine": "2026-S17",
+    "domaine": "Chimie analytique / Diagnostic moléculaire",
+    "titre": "Tandem Mass Spectrometry Fingerprint Tags (TMSFT) Applied for Early Gestation Noninvasive Prenatal Detection of Single-Gene Disorders.",
+    "journal": "Analytical Chemistry",
+    "doi": "10.1021/acs.analchem.5c06012",
+    "if_value": 7.4,
+    "pont_methodologique": "Détection ultrasensible de variants single-copy dans le cfDNA foetal par tags fingerprint en MS/MS. Problème analytique analogue à la MRD-ctDNA : signal rare dans un fond dominant. Transposable au tracking longitudinal des variants fondateurs identifiés sur biopsie tumorale initiale.",
+    "pertinence": 7,
+    "reference_henri_mondor": "Tester la faisabilité technique sur les patients DLBCL/MCL post-CAR-T avec variants fondateurs connus."
+  },
+  {
+    "semaine": "2026-S17",
+    "domaine": "Nanomédecine / Glycoengineering",
+    "titre": "Clickable Universal Tumor-Antigen Equipping Strategy for Remedial Chimeric Antigen Receptor T Cells to Destroy Solid Tumors.",
+    "journal": "ACS Nano",
+    "doi": "10.1021/acsnano.6c00238",
+    "if_value": 17.1,
+    "pont_methodologique": "Stratégie CUTE : glycoengineering métabolique pour amplifier 5,7x la densité antigène CD19 sur cellules cibles. Pont direct avec les mécanismes de résistance par perte antigénique en lymphome B post-CAR-T.",
+    "pertinence": 7,
+    "reference_henri_mondor": "Discussion avec équipe de thérapie cellulaire Mondor : protocole pilote combinant boost antigénique CD19 + CAR-T standard chez patients en re-traitement post-rechute CD19-low."
   }
 ]
