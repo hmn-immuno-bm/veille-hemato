@@ -172,9 +172,7 @@
       "10.1182/bloodadvances.2025019108",
       "10.1002/cncr.70380"
     ],
-    "hors_champ_refs": [
-      "Identification and validation of liquid biopsy-based methylation biomarkers for germ cell tumor subtypes"
-    ],
+    "hors_champ_refs": [],
     "trials_refs": [],
     "priorite": "haute"
   },
@@ -187,9 +185,7 @@
       "10.1038/s41375-026-02942-1",
       "10.1002/cncr.70389"
     ],
-    "hors_champ_refs": [
-      "Patch-to-slide fusion deep learning model for histological diagnosis of early pregnancy loss including hydatidiform mole"
-    ],
+    "hors_champ_refs": [],
     "trials_refs": [],
     "priorite": "haute"
   },
@@ -276,5 +272,122 @@
     "hors_champ_refs": [],
     "trials_refs": [],
     "priorite": "moyenne"
+  },
+  {
+    "titre": "MRD ctDNA-guidée post-thérapie cellulaire en LBCL : du prognostic à l'intervention",
+    "description": "TRANSFORM (Stepan/Peiser, JCO) confirme que la clairance ctDNA mesurée par PhasED-Seq aux J43-J64-J126 est pronostique indépendante du PET en 2L LBCL, avec plus de MRD- sous liso-cel que sous ASCT. La question ouverte est désormais interventionnelle : faut-il intensifier chez les patients ctDNA+ malgré une RC PET ? Henri Mondor pourrait porter un essai investigateur-sponsor ctDNA-guidé post-CAR-T.",
+    "articles_support": [
+      "10.1200/JCO-25-03051",
+      "10.1016/S2352-3026(26)00045-1"
+    ],
+    "hors_champ_refs": [
+      "A machine learning framework combining cfDNA fragmentomics and serum biomarkers for early ovarian cancer detection"
+    ],
+    "trials_refs": [],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Stratification pré-thérapeutique des lymphomes B par expression CD20 + ctDNA",
+    "description": "La cohorte danoise (Gholy/Dietz) montre que 12% des patients sont CD20- en 2L, avec OS médiane 0,9 an vs 3,1 ans. Intégrer dans un score composite Mondor : intensité CD20 IHC quantitative, ctDNA clonalité IGH, et IF/Hb/LDH pour pré-orienter vers CAR-T anti-CD19 vs bispécifiques anti-CD20.",
+    "articles_support": [
+      "10.1016/j.bneo.2026.100219",
+      "10.1200/JCO-25-03051"
+    ],
+    "hors_champ_refs": [
+      "Proteome landscape of B-cell malignancies identifies mantle cell lymphoma protein signature"
+    ],
+    "trials_refs": [],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Réponse PET très précoce + ctDNA dans le Hodgkin avancé : un duo synergique ?",
+    "description": "EORTC-1537-COBRA valide la stratégie PET1-guidée (J21) avec switch BrECADD. En parallèle, la cinétique ctDNA est un prédicteur émergent en cHL. Direction à explorer : mesurer le ctDNA Hodgkin en parallèle du PET1 pour identifier les faux négatifs PET bénéficiant d'une intensification précoce.",
+    "articles_support": [
+      "10.1016/S2352-3026(26)00068-2",
+      "10.1016/j.bneo.2026.100207"
+    ],
+    "hors_champ_refs": [
+      "Beyond Routine Surveillance Imaging for Melanoma: Emerging Technologies for Detecting Early Recurrence and Guiding Clinical Management"
+    ],
+    "trials_refs": [],
+    "priorite": "moyenne"
+  },
+  {
+    "titre": "Ciblage épigénétique HDAC3 + déméthylant en DLBCL résistant : preuve de concept INSERM Nice",
+    "description": "Calaud/Dominguez démontrent une synergie 5-aza + HDAC3i spécifique sur lignées DLBCL ABC/GCB avec préservation des lymphocytes T normaux. Partenariat translationnel possible avec Nice pour validation sur PDX DLBCL r/r et fingerprinting méthylome ctDNA pré/post-traitement.",
+    "articles_support": [
+      "10.1016/j.bneo.2026.100214",
+      "10.1016/S2352-3026(26)00045-1"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [],
+    "priorite": "moyenne"
+  },
+  {
+    "titre": "Désescalade thérapeutique guidée par ctDNA en DLBCL — projet pilote LYSA inspiré de SHORTEN-ctDNA",
+    "description": "L'essai SHORTEN-ctDNA (NCT06693830) à Stanford montre la faisabilité d'une désescalade R-CHOP→rituximab seul après C4 chez les patients en RC iPET4 + ctDNA indétectable. Reproduire ce design dans un cadre LYSA serait pertinent. Henri Mondor dispose de la sérothèque et de la cohorte DLBCL nécessaires.",
+    "articles_support": [
+      "10.1016/j.clml.2026.01.011"
+    ],
+    "hors_champ_refs": [
+      "Bivariate deconvolution for cancer detection after surgery",
+      "Evaluation of Minimal Residual Disease as a Surrogate for Progression-Free Survival in Hematology Oncology Trials: A Meta-Analytic Review"
+    ],
+    "trials_refs": [
+      "NCT06693830",
+      "NCT06141772"
+    ],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Méta-analyse trial-level ctDNA → PFS sur les essais LYSA pour qualification d'endpoint EMA",
+    "description": "Le preprint arXiv 2602.21370 propose un cadre formel pour évaluer la surrogacy de la MRD à la PFS. Appliquer ce cadre aux essais LYSA avec données ctDNA pour quantifier la corrélation trial-level. Si forte, dossier de qualification d'endpoint EMA pour accélérer les futurs essais.",
+    "articles_support": [
+      "10.1016/j.clml.2026.01.011"
+    ],
+    "hors_champ_refs": [
+      "Evaluation of Minimal Residual Disease as a Surrogate for Progression-Free Survival in Hematology Oncology Trials: A Meta-Analytic Review"
+    ],
+    "trials_refs": [
+      "NCT06693830"
+    ],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Monitoring ctDNA précoce (pharmacocinétique horaire post-immuno-chimio)",
+    "description": "L'essai LYMPHO-CLEAR (NCT06141772) explore la cinétique horaire de ctDNA après la première dose de R-CHOP/R-pola-CHP. Hypothèse : un pic ctDNA précoce reflète l'apoptose tumorale et prédit la chimio-sensibilité. Henri Mondor pourrait répliquer cette étude avec une dimension multi-omique.",
+    "articles_support": [
+      "10.1016/j.clml.2026.01.011"
+    ],
+    "hors_champ_refs": [
+      "Bivariate deconvolution for cancer detection after surgery"
+    ],
+    "trials_refs": [
+      "NCT06141772",
+      "NCT06693830"
+    ],
+    "priorite": "moyenne"
+  },
+  {
+    "titre": "ctDNA dans le LCR — prophylaxie SNC personnalisée dans les LNH B agressifs",
+    "description": "Deux essais (LIBERTY NCT06090162 ; nivolumab PCNSL NCT04401774) consacrent la ctDNA-LCR comme outil diagnostique pour l'atteinte SNC. Convergence pour une prophylaxie SNC personnalisée : score CNS-IPI + ctDNA-LCR à la stadification.",
+    "articles_support": [],
+    "hors_champ_refs": [],
+    "trials_refs": [
+      "NCT06090162",
+      "NCT04401774",
+      "NCT04129710"
+    ],
+    "priorite": "moyenne"
+  },
+  {
+    "titre": "Reconstruction in situ de l'évolution clonale dans les transformations via spatial transcriptomics",
+    "description": "Le framework MIOFlow 2.0 permet d'inférer la dynamique cellulaire stochastique à partir de snapshots scRNA-seq + spatial transcriptomics. Application aux biopsies de transformation (FL→DLBCL, Richter) des cohortes Mondor pour identifier les sous-clones précurseurs.",
+    "articles_support": [],
+    "hors_champ_refs": [
+      "MIOFlow 2.0: A unified framework for inferring cellular stochastic dynamics from single cell and spatial transcriptomics data"
+    ],
+    "trials_refs": [],
+    "priorite": "basse"
   }
 ]

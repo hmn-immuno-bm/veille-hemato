@@ -1,9 +1,25 @@
 {
-  "date": "2026-04-25",
-  "total_trials": 25,
-  "format_errors": 0,
+  "date": "2026-05-04",
+  "total_trials": 33,
+  "format_errors": 15,
   "verified": 25,
-  "unverified": 0,
+  "unverified": 8,
   "stale_verifications": 0,
-  "errors": []
+  "errors": [
+    "Essai #26 (NCT04824950): phase 'N/A' non reconnue",
+    "Essai #26 (NCT04824950): centres_fr 'À vérifier' invalide",
+    "Essai #26 (NCT04824950): non verifie (pas de verified_at)",
+    "Essai #27 (NCT06141772): phase 'N/A' non reconnue",
+    "Essai #27 (NCT06141772): centres_fr 'À vérifier' invalide",
+    "Essai #27 (NCT06141772): non verifie (pas de verified_at)",
+    "Essai #28 (NCT04401774): non verifie (pas de verified_at)",
+    "Essai #29 (NCT04129710): centres_fr 'À vérifier' invalide",
+    "Essai #29 (NCT04129710): non verifie (pas de verified_at)",
+    "Essai #30 (NCT04703686): non verifie (pas de verified_at)",
+    "Essai #31 (NCT05529069): centres_fr 'À vérifier' invalide",
+    "Essai #31 (NCT05529069): non verifie (pas de verified_at)",
+    "Essai #32 (NCT06252675): centres_fr 'À vérifier' invalide",
+    "Essai #32 (NCT06252675): non verifie (pas de verified_at)",
+    "Essai #33 (NCT05934838): non verifie (pas de verified_at)"
+  ]
 }

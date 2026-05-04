@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "semaine": "2026-S16",
+    "domaine": "Oncologie pédiatrique — Sarcome d'Ewing / ctDNA correlatif",
+    "titre": "Trabectedin and low-dose irinotecan to target EWS::FLI1 in Ewing sarcoma: a phase 1/2 trial",
+    "journal": "Nature Medicine",
+    "doi": "10.1038/s41591-026-04340-7",
+    "if_value": 58.7,
+    "pont_methodologique": "Essai phase 1/2 (SARC037, n=37) ciblant directement le facteur de transcription oncogénique EWS::FLI1 par trabectédine + irinotécan, avec ctDNA comme endpoint corrélatif. Le cadre — ciblage d'un driver transcriptionnel indispensable (analogue à MYD88/CD79B en DLBCL MCD, ou BCL6 en GCB) couplé à un monitoring ctDNA pharmacodynamique — est transposable aux stratégies de ciblage driver-dépendant dans les lymphomes B, notamment pour doser précocement la dépendance et l'échappement via ctDNA. Reversal du transcriptome EWS::FLI1 objectivé sur biopsies : approche validable pour BCL6 dégradeurs en FL/DLBCL.",
+    "pertinence": 6,
+    "reference_henri_mondor": "Collaboration possible avec l'unité sarcome Gustave Roussy / Inserm U955 Henri Mondor sur méthodologie ctDNA-PD (pharmacodynamie) pour essais ciblant des drivers transcriptionnels en lymphomes B agressifs post-CAR-T.",
+    "verified_source": "https://pubmed.ncbi.nlm.nih.gov/41991689/",
+    "quarantine_reason": "verified_source HTTP None",
+    "quarantined_at": "2026-05-04"
+  },
+  {
+    "semaine": "2026-S16",
+    "domaine": "Oncologie germinale — Méthylome plasmatique",
+    "titre": "Identification and validation of liquid biopsy-based methylation biomarkers for germ cell tumor subtypes",
+    "journal": "Communications Medicine",
+    "doi": "10.1038/s43856-026-01587-6",
+    "if_value": 5.9,
+    "pont_methodologique": "Analyse intégrée DNA-méthylome (arrays 450K/EPIC) de 16 datasets GCT (n=719) avec identification de DMRs (regions différentiellement méthylées) subtype-specific, validation par qPCR sensibilité méthylation (MSRE) sur cfDNA sérique. Le pipeline bio-informatique — clustering non-supervisé, Heidelberg classifier, DMR à haute résolution pour histologies rares — est directement applicable à la discrimination DLBCL GCB vs ABC, à la détection de transformation FL→DLBCL, ou au typage méthylome Richter-CLL via ctDNA. Démonstration de la détectabilité plasma pour un biomarqueur (DPP7) : proof-of-concept immédiatement transférable aux lymphomes B.",
+    "pertinence": 8,
+    "reference_henri_mondor": "À proposer pour collaboration avec plateforme épigénétique INSERM U955 Henri Mondor / Centre Henri Becquerel (Ruminy, Bohers) sur un panel méthylome lymphomes B transférable EPIC array → ctDNA.",
+    "verified_source": "https://pubmed.ncbi.nlm.nih.gov/41998312/",
+    "quarantine_reason": "verified_source HTTP None",
+    "quarantined_at": "2026-05-04"
+  },
+  {
+    "semaine": "2026-S16",
+    "domaine": "Pathologie numérique — IA multi-stain patch-to-slide",
+    "titre": "Patch-to-slide fusion deep learning model for histological diagnosis of early pregnancy loss including hydatidiform mole",
+    "journal": "NPJ Digital Medicine",
+    "doi": "10.1038/s41746-026-02628-z",
+    "if_value": 12.4,
+    "pont_methodologique": "Modèle deep-learning patch-to-slide avec masking adaptatif fusionnant H&E + p57 (+ Ki-67) sur 1380 WSI, 1287 patients, AUROC 0,959 (development) / 0,930 (validation externe). Le multi-stain fusion (H&E + IHC) surpasse les modèles single-stain — cadre directement transposable au diagnostic histologique différentiel fin en hémato-pathologie : blastoïd vs pléomorphe MCL (via H&E + cyclin D1 + Ki-67 + TP53), double-hit DLBCL (H&E + MYC/BCL2 FISH-pour-lames ou IHC), classification GCB/ABC via Hans algorithm assisté. L'amélioration mesurée des performances pathologistes (p<0,05) est un argument de déploiement.",
+    "pertinence": 7,
+    "reference_henri_mondor": "Collaboration potentielle avec département de pathologie Henri Mondor (Gaulard, Copie-Bergman, Lechapt) + INSERM U955 pour adapter le framework au diagnostic MCL blastoïd TdT+ et double-hit DLBCL — thématique locale vue cette semaine avec Pirlog et al.",
+    "verified_source": "https://pubmed.ncbi.nlm.nih.gov/42000889/",
+    "quarantine_reason": "verified_source HTTP None",
+    "quarantined_at": "2026-05-04"
+  }
+]

@@ -9,7 +9,7 @@
     "pont_methodologique": "Framework combinant 10 algorithmes de détection de changements en ensemble avec pipeline LLM pour explication contextuelle automatisée. Directement transposable au monitoring longitudinal du ctDNA : les cinétiques post-traitement (décroissance, plateau, re-ascension) constituent des séries temporelles où la détection précoce de rupture (relapse moléculaire) est critique. L'ensemble multi-algorithmes réduirait les faux positifs par rapport aux seuils fixes actuels, et le composant RAG intégrerait le contexte clinique (cycles, infections) pour expliquer chaque changement détecté.",
     "pertinence": 5,
     "reference_henri_mondor": "Développer un outil de monitoring ctDNA longitudinal intégrant détection de rupture multi-algorithmes + explicabilité LLM sur les cohortes DLBCL/FL suivies à Henri Mondor, en collaboration avec les bio-informaticiens de l'IMRB.",
-    "verified_at": "2026-04-23"
+    "verified_at": "2026-05-04"
   },
   {
     "semaine": "2026-S13",
@@ -21,7 +21,7 @@
     "pont_methodologique": "REAMP utilise la théorie du transport optimal (distance Earth Mover) combinée à la résonance stochastique (concept de physique où le bruit améliore la détection du signal) pour détecter des changements structurels dans des données haute-dimension. Particulièrement pertinent pour les panels multi-analytes de biopsie liquide (fragmentomique + méthylation + mutations + protéines) où les changements simultanés signalent une évolution clonale. La méthode de double-sharpening améliorerait la résolution temporelle de la détection de résistance dans le suivi ctDNA multi-modal.",
     "pertinence": 4,
     "reference_henri_mondor": "Appliquer REAMP aux données longitudinales multi-omiques de biopsie liquide des patients MCL/DLBCL pour détecter précocement les changements de régime (résistance, transformation) avec meilleure sensibilité que les approches univariées.",
-    "verified_at": "2026-04-23"
+    "verified_at": "2026-05-04"
   },
   {
     "semaine": "2026-S14",
@@ -33,7 +33,7 @@
     "pont_methodologique": "Méta-analyse de la surrogacité de la MRD (ctDNA) comme substitut à la PFS dans les essais oncologie hématologique, avec focus sur le lymphome folliculaire. Utilise des corrélations individuelles et agrégées (trial-level). Directement applicable à la valorisation des endpoints MRD/ctDNA dans la conception d'essais lymphomes B et à la défense de cette approche auprès des autorités réglementaires (FDA/EMA).",
     "pertinence": 9,
     "reference_henri_mondor": "Valoriser les données de ctDNA longitudinal collectées en pratique clinique (DLBCL, FL) pour constituer un jeu de données de corrélation MRD–PFS permettant de valider statistiquement le ctDNA comme endpoint de substitution dans un contexte réglementaire français/européen.",
-    "verified_at": "2026-04-23"
+    "verified_at": "2026-05-04"
   },
   {
     "semaine": "2026-S14",
@@ -45,43 +45,7 @@
     "pont_methodologique": "Framework GNN interprétable combinant XGBoost pour la construction de graphes omiques et des GNN modulaires pour la classification de maladies. Applicable à la classification moléculaire des lymphomes B à partir de données multi-omiques (ctDNA + transcriptome + méthylome).",
     "pertinence": 6,
     "reference_henri_mondor": "Pont avec l'approche de sous-typage moléculaire des DLBCL par ctDNA (génotypage tumoral non-invasif).",
-    "verified_at": "2026-04-23"
-  },
-  {
-    "semaine": "2026-S16",
-    "domaine": "Oncologie pédiatrique — Sarcome d'Ewing / ctDNA correlatif",
-    "titre": "Trabectedin and low-dose irinotecan to target EWS::FLI1 in Ewing sarcoma: a phase 1/2 trial",
-    "journal": "Nature Medicine",
-    "doi": "10.1038/s41591-026-04340-7",
-    "if_value": 58.7,
-    "pont_methodologique": "Essai phase 1/2 (SARC037, n=37) ciblant directement le facteur de transcription oncogénique EWS::FLI1 par trabectédine + irinotécan, avec ctDNA comme endpoint corrélatif. Le cadre — ciblage d'un driver transcriptionnel indispensable (analogue à MYD88/CD79B en DLBCL MCD, ou BCL6 en GCB) couplé à un monitoring ctDNA pharmacodynamique — est transposable aux stratégies de ciblage driver-dépendant dans les lymphomes B, notamment pour doser précocement la dépendance et l'échappement via ctDNA. Reversal du transcriptome EWS::FLI1 objectivé sur biopsies : approche validable pour BCL6 dégradeurs en FL/DLBCL.",
-    "pertinence": 6,
-    "reference_henri_mondor": "Collaboration possible avec l'unité sarcome Gustave Roussy / Inserm U955 Henri Mondor sur méthodologie ctDNA-PD (pharmacodynamie) pour essais ciblant des drivers transcriptionnels en lymphomes B agressifs post-CAR-T.",
-    "verified_source": "https://pubmed.ncbi.nlm.nih.gov/41991689/"
-  },
-  {
-    "semaine": "2026-S16",
-    "domaine": "Oncologie germinale — Méthylome plasmatique",
-    "titre": "Identification and validation of liquid biopsy-based methylation biomarkers for germ cell tumor subtypes",
-    "journal": "Communications Medicine",
-    "doi": "10.1038/s43856-026-01587-6",
-    "if_value": 5.9,
-    "pont_methodologique": "Analyse intégrée DNA-méthylome (arrays 450K/EPIC) de 16 datasets GCT (n=719) avec identification de DMRs (regions différentiellement méthylées) subtype-specific, validation par qPCR sensibilité méthylation (MSRE) sur cfDNA sérique. Le pipeline bio-informatique — clustering non-supervisé, Heidelberg classifier, DMR à haute résolution pour histologies rares — est directement applicable à la discrimination DLBCL GCB vs ABC, à la détection de transformation FL→DLBCL, ou au typage méthylome Richter-CLL via ctDNA. Démonstration de la détectabilité plasma pour un biomarqueur (DPP7) : proof-of-concept immédiatement transférable aux lymphomes B.",
-    "pertinence": 8,
-    "reference_henri_mondor": "À proposer pour collaboration avec plateforme épigénétique INSERM U955 Henri Mondor / Centre Henri Becquerel (Ruminy, Bohers) sur un panel méthylome lymphomes B transférable EPIC array → ctDNA.",
-    "verified_source": "https://pubmed.ncbi.nlm.nih.gov/41998312/"
-  },
-  {
-    "semaine": "2026-S16",
-    "domaine": "Pathologie numérique — IA multi-stain patch-to-slide",
-    "titre": "Patch-to-slide fusion deep learning model for histological diagnosis of early pregnancy loss including hydatidiform mole",
-    "journal": "NPJ Digital Medicine",
-    "doi": "10.1038/s41746-026-02628-z",
-    "if_value": 12.4,
-    "pont_methodologique": "Modèle deep-learning patch-to-slide avec masking adaptatif fusionnant H&E + p57 (+ Ki-67) sur 1380 WSI, 1287 patients, AUROC 0,959 (development) / 0,930 (validation externe). Le multi-stain fusion (H&E + IHC) surpasse les modèles single-stain — cadre directement transposable au diagnostic histologique différentiel fin en hémato-pathologie : blastoïd vs pléomorphe MCL (via H&E + cyclin D1 + Ki-67 + TP53), double-hit DLBCL (H&E + MYC/BCL2 FISH-pour-lames ou IHC), classification GCB/ABC via Hans algorithm assisté. L'amélioration mesurée des performances pathologistes (p<0,05) est un argument de déploiement.",
-    "pertinence": 7,
-    "reference_henri_mondor": "Collaboration potentielle avec département de pathologie Henri Mondor (Gaulard, Copie-Bergman, Lechapt) + INSERM U955 pour adapter le framework au diagnostic MCL blastoïd TdT+ et double-hit DLBCL — thématique locale vue cette semaine avec Pirlog et al.",
-    "verified_source": "https://pubmed.ncbi.nlm.nih.gov/42000889/"
+    "verified_at": "2026-05-04"
   },
   {
     "semaine": "2026-S17",
@@ -92,7 +56,8 @@
     "if_value": 7.4,
     "pont_methodologique": "Détection ultrasensible de variants single-copy dans le cfDNA foetal par tags fingerprint en MS/MS. Problème analytique analogue à la MRD-ctDNA : signal rare dans un fond dominant. Transposable au tracking longitudinal des variants fondateurs identifiés sur biopsie tumorale initiale.",
     "pertinence": 7,
-    "reference_henri_mondor": "Tester la faisabilité technique sur les patients DLBCL/MCL post-CAR-T avec variants fondateurs connus."
+    "reference_henri_mondor": "Tester la faisabilité technique sur les patients DLBCL/MCL post-CAR-T avec variants fondateurs connus.",
+    "verified_at": "2026-05-04"
   },
   {
     "semaine": "2026-S17",
@@ -103,6 +68,67 @@
     "if_value": 17.1,
     "pont_methodologique": "Stratégie CUTE : glycoengineering métabolique pour amplifier 5,7x la densité antigène CD19 sur cellules cibles. Pont direct avec les mécanismes de résistance par perte antigénique en lymphome B post-CAR-T.",
     "pertinence": 7,
-    "reference_henri_mondor": "Discussion avec équipe de thérapie cellulaire Mondor : protocole pilote combinant boost antigénique CD19 + CAR-T standard chez patients en re-traitement post-rechute CD19-low."
+    "reference_henri_mondor": "Discussion avec équipe de thérapie cellulaire Mondor : protocole pilote combinant boost antigénique CD19 + CAR-T standard chez patients en re-traitement post-rechute CD19-low.",
+    "verified_at": "2026-05-04"
+  },
+  {
+    "semaine": "2026-S18",
+    "domaine": "Statistique / ML appliqué — fragmentomique cfDNA en oncologie gynécologique",
+    "titre": "A machine learning framework combining cfDNA fragmentomics and serum biomarkers for early ovarian cancer detection",
+    "journal": "Cell Communication and Signaling",
+    "doi": "10.1186/s12964-026-02908-x",
+    "if_value": 7.0,
+    "pont_methodologique": "Le cadre ML combine plusieurs familles de features fragmentomiques cfDNA (CNV, distribution de tailles, motifs Neomers en bouts) avec des biomarqueurs sériques (CA125, HE4) pour produire un score composite. L'architecture est directement transposable au profilage cfDNA des lymphomes B agressifs : on peut imaginer un score multimodal intégrant fragmentation ctDNA + LDH + microβ2 + IF clonotypique pour la stratification pré-thérapeutique de DLBCL/MCL. Le pipeline normalise pré-analytiquement les biais de fragmentation. À tester sur la cohorte ctDNA d'Henri Mondor.",
+    "pertinence": 7,
+    "reference_henri_mondor": "Réutiliser le pipeline de feature extraction sur le wgs cfDNA des cohortes DLBCL Mondor (cf. travaux LYSA), comparer à un score VrtMRD-like ; collaboration possible avec l'équipe de bioinformatique de l'IMRB.",
+    "verified_at": "2026-05-04"
+  },
+  {
+    "semaine": "2026-S18",
+    "domaine": "Oncologie médicale — surveillance moléculaire post-thérapie",
+    "titre": "Beyond Routine Surveillance Imaging for Melanoma: Emerging Technologies for Detecting Early Recurrence and Guiding Clinical Management",
+    "journal": "ASCO Educational Book",
+    "doi": "10.1200/EDBK-26-520544",
+    "if_value": 5.0,
+    "pont_methodologique": "Revue narrative de la stratégie d'intégration ctDNA + imagerie immunitaire (CD8-PET) pour la surveillance post-opératoire du mélanome stade III. Question structurellement identique à celle posée en Hodgkin/DLBCL post-CAR-T : comment combiner un biomarqueur moléculaire ultrasensible (ctDNA-PhasED) avec une imagerie fonctionnelle pour optimiser la surveillance ?",
+    "pertinence": 6,
+    "reference_henri_mondor": "Discussion à mener avec la médecine nucléaire Mondor (équipe Itti) sur la place de l'imagerie immuno-PET dans le suivi post-CAR-T DLBCL.",
+    "verified_at": "2026-05-04"
+  },
+  {
+    "semaine": "2026-S18",
+    "domaine": "Protéomique / hémopathies B — preprint bioRxiv",
+    "titre": "Proteome landscape of B-cell malignancies identifies mantle cell lymphoma protein signature",
+    "journal": "bioRxiv (preprint)",
+    "doi": "10.64898/2026.03.02.709116",
+    "if_value": 0,
+    "pont_methodologique": "Cartographie protéomique transversale des hémopathies B identifiant une signature MCL distincte. La complémentarité avec les signatures génomiques/épigénomiques permet d'envisager un classifieur multimodal (protéome + ctDNA + méthylome plasmatique) pour la stratification pré-thérapeutique. Pertinent pour la MRD multimodale en MCL.",
+    "pertinence": 6,
+    "reference_henri_mondor": "Examiner si les biobanques DLBCL/MCL Mondor permettraient une réplication protéomique sur plasma (collaboration plateforme protéomique IMRB).",
+    "verified_at": "2026-05-04"
+  },
+  {
+    "semaine": "2026-S18",
+    "domaine": "Statistique / Biostatistique",
+    "titre": "Bivariate deconvolution for cancer detection after surgery",
+    "journal": "arXiv preprint",
+    "doi": "https://arxiv.org/abs/2603.17864",
+    "if_value": 0,
+    "pont_methodologique": "Les auteurs proposent un modèle de déconvolution bivariée pour estimer la proportion tumorale à partir de profils de méthylation cfDNA mesurés AVANT et APRÈS chirurgie chez le même patient. Le couplage pré/post permet d'éliminer le bruit individuel et d'augmenter la sensibilité de détection de MRD. Application directe au monitoring ctDNA post-traitement en lymphome B.",
+    "pertinence": 9,
+    "reference_henri_mondor": "Reformuler l'analyse de la cohorte ctDNA Mondor (DLBCL post-R-CHOP) en cadre bivarié pré/post pour gagner en sensibilité MRD à 6 mois. Collaboration possible avec Mark van de Wiel (Amsterdam UMC).",
+    "verified_at": "2026-05-04"
+  },
+  {
+    "semaine": "2026-S18",
+    "domaine": "IA / Apprentissage automatique",
+    "titre": "MIOFlow 2.0: A unified framework for inferring cellular stochastic dynamics from single cell and spatial transcriptomics data",
+    "journal": "arXiv preprint",
+    "doi": "https://arxiv.org/abs/2603.22564",
+    "if_value": 0,
+    "pont_methodologique": "Cadre unifié intégrant manifold learning, transport optimal et équations différentielles neuronales pour inférer la dynamique cellulaire stochastique conditionnée spatialement. Pertinent pour modéliser l'évolution clonale du lymphome B in situ (transformation Richter, FL→DLBCL).",
+    "pertinence": 7,
+    "reference_henri_mondor": "À tester sur les biopsies de transformation Richter de la cohorte Mondor pour cartographier les sous-clones à risque de transformation.",
+    "verified_at": "2026-05-04"
   }
 ]
