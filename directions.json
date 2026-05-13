@@ -389,5 +389,39 @@
     ],
     "trials_refs": [],
     "priorite": "basse"
+  },
+  {
+    "titre": "ctDNA MRD-2 comme endpoint de désescalade précoce en Hodgkin avancé",
+    "description": "L'assay LymphoVista validé dans HD21 (Heger/Borchmann, Blood) démontre que la MRD-2 par ctDNA est évaluable en cHL avancé. Couplé à EORTC-1537-COBRA (PET1-guided S18), cela ouvre la voie à un essai combinant PET1 + MRD-2 ctDNA pour une désescalade encore plus précoce et précise. Henri Mondor pourrait proposer cette stratégie dans le cadre LYSA/EORTC.",
+    "articles_support": [
+      "10.1182/blood.2025031089"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Séquençage post-CAR-T 2L en LBCL : données DESCAR-T pour structurer la stratégie française",
+    "description": "DESCAR-T (Sesques/Camus, HemaSphere) documente 33% de rechutes post-CAR-T 2L avec les bispécifiques comme sauvetage majoritaire (65%). Ces données real-world françaises sont essentielles pour structurer la séquence thérapeutique nationale. Henri Mondor (contributeur DESCAR-T) pourrait proposer un bras interventionnel ctDNA-guidé pour identifier précocement les rechutes post-CAR-T et intervenir avant la rechute clinique.",
+    "articles_support": [
+      "10.1002/hem3.70356"
+    ],
+    "hors_champ_refs": [],
+    "trials_refs": [
+      "NCT04703686"
+    ],
+    "priorite": "haute"
+  },
+  {
+    "titre": "Score composite multi-analyte cfDNA pour MRD en DLBCL",
+    "description": "L'approche multi-analyte du test HelioLiver (méthylation + protéines, J Hepatol IF 27) et PREDICT (ctDNA sub-100 ppm, JCO IF 45) convergent vers des scores composites dépassant le simple comptage de variants. Combiner méthylation cfDNA + fragmentomique + LDH + β2-micro pour un score multimodal MRD en DLBCL, applicable aux sérothèques Mondor.",
+    "articles_support": [
+      "10.1200/JCO-25-02934"
+    ],
+    "hors_champ_refs": [
+      "A Multi-Analyte cfDNA-based Blood Test for Early Detection of Hepatocellular Carcinoma"
+    ],
+    "trials_refs": [],
+    "priorite": "moyenne"
   }
 ]

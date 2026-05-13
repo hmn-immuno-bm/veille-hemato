@@ -130,5 +130,38 @@
     "pertinence": 7,
     "reference_henri_mondor": "À tester sur les biopsies de transformation Richter de la cohorte Mondor pour cartographier les sous-clones à risque de transformation.",
     "verified_at": "2026-05-04"
+  },
+  {
+    "semaine": "2026-S19",
+    "domaine": "Hépatologie / biopsie liquide",
+    "titre": "A Multi-Analyte cfDNA-based Blood Test for Early Detection of Hepatocellular Carcinoma",
+    "journal": "Journal of Hepatology",
+    "doi": "10.1016/j.jhep.2026.04.012",
+    "if_value": 26.8,
+    "pont_methodologique": "Test cfDNA multi-analyte (HelioLiver Dx) prospectif (n=1268) supérieur à l'échographie pour détection précoce CHC. Méthodologie multi-analyte (méthylation + protéines) directement transférable à la détection MRD/early relapse en lymphome B. Architecture composite à tester sur les cohortes DLBCL avec sérothèque disponible.",
+    "pertinence": 7,
+    "reference_henri_mondor": "Adapter l'approche multi-analyte (méthylation cfDNA + LDH + β2-micro) pour un score composite de MRD en DLBCL post-R-CHOP."
+  },
+  {
+    "semaine": "2026-S19",
+    "domaine": "IA / pathologie digitale",
+    "titre": "Deep learning based on CD3 histological slides for prediction of colon cancer outcome: analysis of three international stage III colon cancer cohorts",
+    "journal": "Oncoimmunology",
+    "doi": "10.1080/2162402X.2026.2668797",
+    "if_value": 7.5,
+    "pont_methodologique": "Modèle VGG19 sur lames CD3 prédisant la DFS dans 3 cohortes coloriques internationales (PETACC08, PRODIGE-13, HARMONY ; n=1737, équipes françaises Dijon/Besançon/AP-HP). Pipeline deep learning transférable à la quantification des TIL dans le micro-environnement tumoral des lymphomes B. Collaboration française potentielle.",
+    "pertinence": 6,
+    "reference_henri_mondor": "Tester le pipeline VGG19 sur les lames CD3/CD8 des biopsies ganglionnaires DLBCL de Mondor pour prédire la réponse à R-CHOP, en collaboration avec l'équipe de pathologie digitale."
+  },
+  {
+    "semaine": "2026-S19",
+    "domaine": "Nanomédecine / biologie cfDNA",
+    "titre": "Self-propelled nanozyme motors for targeted therapy of radiation cystitis by disrupting the inflammation-cfDNA vicious cycle",
+    "journal": "Journal of Nanobiotechnology",
+    "doi": "10.1186/s12951-026-04508-w",
+    "if_value": 11.7,
+    "pont_methodologique": "Démontre le rôle pro-inflammatoire du cfDNA via la voie cGAS-STING dans la cystite radique. Pertinent pour comprendre la biologie du cfDNA libéré post-immunothérapie (CAR-T/BsAb) et son rôle potentiel dans le CRS/ICANS. Le cfDNA n'est pas seulement un biomarqueur passif mais un acteur de l'inflammation.",
+    "pertinence": 5,
+    "reference_henri_mondor": "Explorer le dosage cfDNA total (pas seulement ctDNA tumoral) comme biomarqueur du CRS/ICANS post-CAR-T dans la cohorte DESCAR-T Mondor."
   }
 ]
